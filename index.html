@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Irfan Priyadi Nurfauzi - Mobile & Flutter Developer. Editorial portfolio showcasing high-performance mobile apps, Flutter, and Java Native.">
+  <meta name="author" content="Irfan Priyadi Nurfauzi">
+  <title>Irfan Priyadi Nurfauzi | A Mobile &amp; Flutter Developer</title>
+
+  <!-- Google Fonts: Oswald, Syne, Instrument Serif, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP HEADER / NAV (MINIMALIST) -->
+  <header class="header-nav">
+    <div class="container nav-wrapper">
+      <a href="#hero" class="brand-tag">
+        <span class="brand-dot"></span>
+        <span>IRFAN</span>
+      </a>
+
+      <div class="nav-right-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Ganti Tema">
+          <span id="theme-icon">◐</span>
+          <span id="theme-label">STONE</span>
+        </button>
+
+        <button class="menu-pill-btn" id="menu-btn" aria-label="Menu Navigasi">
+          <span>MENU</span>
+          <span>☰</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- DRAWER NAVIGATION MODAL -->
+  <div class="menu-backdrop" id="menu-backdrop"></div>
+  <aside class="menu-drawer" id="menu-drawer">
+    <button class="menu-close-btn" id="menu-close-btn" aria-label="Tutup Menu">✕</button>
+    <nav>
+      <ul class="drawer-links">
+        <li><a href="#hero" class="drawer-link">01. Beranda</a></li>
+        <li><a href="#about" class="drawer-link">02. Tentang Saya</a></li>
+        <li><a href="#portfolio" class="drawer-link">03. Portofolio</a></li>
+        <li><a href="#experience" class="drawer-link">04. Pengalaman</a></li>
+        <li><a href="#contact" class="drawer-link">05. Kontak</a></li>
+      </ul>
+    </nav>
+    <div style="font-size: 0.85rem; color: var(--text-tertiary);">
+      <p style="margin-bottom: 0.35rem;">Hubungi Saya Langsung:</p>
+      <a href="https://wa.me/6285694118211" target="_blank" style="color: var(--text-primary); font-weight: 600;">+62 856-9411-8211</a><br>
+      <a href="mailto:irfanpnf@gmail.com" style="color: var(--text-primary); font-weight: 600;">irfanpnf@gmail.com</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION (MATCHING SCREENSHOT WITH ARCH & METRICS) -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-editorial-grid">
+        
+        <!-- Left Column: Headline, Bio & CTA -->
+        <div class="hero-left-col">
+          <div class="hero-greeting">Hey, I'm Irfan,</div>
+          
+          <h1 class="hero-headline">
+            <span>A MOBILE</span>
+            <span class="serif-part">&amp; Flutter</span>
+            <span>DEVELOPER</span>
+          </h1>
+
+          <p class="hero-bio">
+            Transforming complex mobile architectures into intuitive, smooth, high-performing Flutter &amp; native apps that captivate users, scale seamlessly, and deliver real results.
+          </p>
+
+          <div class="hero-cta-wrapper">
+            <a href="https://wa.me/6285694118211?text=Halo%20Irfan%20Priyadi,%20saya%20tertarik%20untuk%20berdiskusi%20proyek%20mobile%20app" target="_blank" class="pill-btn">
+              <span>CHAT VIA WA</span>
+              <div class="btn-arrow-circle">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <a href="#portfolio" class="pill-btn pill-btn-outline">
+              <span>WORKS</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Center Column: Iconic Arch Portrait Frame -->
+        <div class="hero-center-col">
+          <div class="hero-arch-container">
+            <img src="assets/images/profile-arch.jpg" alt="Irfan Priyadi Nurfauzi - Mobile Developer" class="hero-arch-image">
+          </div>
+        </div>
+
+        <!-- Right Column: Vertical Metrics Stack -->
+        <div class="hero-right-col">
+          <div class="metric-item">
+            <span class="metric-number">15+</span>
+            <span class="metric-label">Apps Delivered</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-number">5+</span>
+            <span class="metric-label">Years Experience</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-number">100%</span>
+            <span class="metric-label">Play Store Published</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-number">10+</span>
+            <span class="metric-label">Tech Stacks</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4-COLUMN FEATURE STRIP -->
+    <section class="feature-strip">
+      <div class="container feature-strip-grid">
+        <div class="strip-item">
+          <h3 class="strip-title">HIGH-PERFORMANCE FLUTTER</h3>
+          <p class="strip-desc">Smooth 60fps UI animations, responsive layouts, and minimal memory footprint on Android and iOS.</p>
+        </div>
+
+        <div class="strip-item">
+          <h3 class="strip-title">CLEAN ARCHITECTURE &amp; BLOC</h3>
+          <p class="strip-desc">Predictable state management, modular code structure, and enterprise-grade maintainability.</p>
+        </div>
+
+        <div class="strip-item">
+          <h3 class="strip-title">NATIVE JAVA &amp; HARDWARE SDKs</h3>
+          <p class="strip-desc">Deep Android native integration, Bluetooth thermal printer, live GPS tracking, and background services.</p>
+        </div>
+
+        <div class="strip-item">
+          <h3 class="strip-title">SEAMLESS PLAY STORE DEPLOYMENT</h3>
+          <p class="strip-desc">End-to-end release lifecycle, app bundling (AAB), signing keys, and Google Play Console compliance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY / CLIENTS & ECOSYSTEM -->
+    <section class="trusted-by-section">
+      <div class="container">
+        <div class="trusted-header">
+          <h2 class="trusted-title">TRUSTED BY &amp; ECOSYSTEM</h2>
+          <span class="trusted-subtitle">5+ years of delivering impactful mobile solutions across industry sectors</span>
+        </div>
+
+        <div class="trusted-grid">
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>PT CDC Global Informatika</span>
+          </div>
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>PT Zamasco</span>
+          </div>
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>Salam Enterprise</span>
+          </div>
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>Google Play Console</span>
+          </div>
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>STMIK Dharma Negara</span>
+          </div>
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>SMK Wikrama Bogor</span>
+          </div>
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>Android Native</span>
+          </div>
+          <div class="trusted-badge">
+            <span class="badge-logo-icon">◈</span>
+            <span>GitHub Repositories</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL STORY (2-COLUMN ABOUT SECTION) -->
+    <section class="editorial-story-section" id="about">
+      <div class="container editorial-story-grid">
+        <div class="story-left">
+          <h2 class="story-heading">
+            CRAFTING MEANINGFUL MOBILE APPS &amp; INTUITIVE EXPERIENCES
+          </h2>
+        </div>
+
+        <div class="story-content">
+          <p class="story-lead">
+            Hey, I'm Irfan Priyadi Nurfauzi, a Mobile Developer passionate about building high-performance, visually compelling, and user-centric digital products for Android and iOS.
+          </p>
+
+          <p class="story-body">
+            With 5+ years of hands-on expertise in Flutter and Java, I specialize in translating complex architectural requirements and Figma prototypes into robust, responsive mobile applications. Having graduated with a Bachelor's in Informatics Engineering from STMIK Dharma Negara and software engineering roots from SMK Wikrama Bogor, my focus is bridging elegant aesthetics with dependable code quality.
+          </p>
+
+          <p class="story-body">
+            From deploying production-ready applications on the Google Play Store to integrating multi-endpoint RESTful APIs and real-time offline caching, I thrive on engineering apps that users love to open every single day.
+          </p>
+
+          <div class="story-highlights">
+            <div class="highlight-item">
+              <h4>PROBLEM SOLVING</h4>
+              <p>Analyzing architectural bottlenecks and optimizing app load times and responsiveness.</p>
+            </div>
+            <div class="highlight-item">
+              <h4>COLLABORATION &amp; GIT</h4>
+              <p>Effective branch workflows, code reviews, and cross-functional team coordination.</p>
+            </div>
+            <div class="highlight-item">
+              <h4>CLEAR COMMUNICATION</h4>
+              <p>Transparent progress reporting with product owners, stakeholders, and clients.</p>
+            </div>
+            <div class="highlight-item">
+              <h4>ATTENTION TO DETAIL</h4>
+              <p>Pixel-perfect slicing from Figma to Flutter widgets with fluid transitions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION (MATCHING SCREENSHOT CARD STYLE) -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="portfolio-header">
+          <h2 class="portfolio-title">PORTFOLIO</h2>
+          <span class="portfolio-subtitle">Curated selection of mobile applications &amp; full-stack platforms</span>
+        </div>
+
+        <div class="portfolio-cards-stack">
+          <!-- Featured Project 1: Enterprise Mobile App (Full Width) -->
+          <article class="editorial-project-card">
+            <div class="project-media-frame">
+              <img src="assets/images/project-enterprise.jpg" alt="CDC Enterprise Mobile Suite" loading="lazy">
+            </div>
+            <div class="project-caption-bar">
+              <div class="project-caption-left">
+                <h3>CDC ENTERPRISE MOBILE SUITE</h3>
+                <p>Enterprise performance dashboard, task management, and real-time business telemetry.</p>
+              </div>
+              <div class="project-tags-group">
+                <span class="project-tag-pill">Flutter</span>
+                <span class="project-tag-pill">Dart</span>
+                <span class="project-tag-pill">REST API</span>
+                <span class="project-tag-pill">Play Store</span>
+              </div>
+              <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20proyek%20CDC%20Enterprise" target="_blank" class="pill-btn" style="padding: 0.5rem 1.1rem; font-size: 0.78rem;">
+                <span>CASE STUDY ↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2-Column Grid for Secondary Projects -->
+          <div class="projects-two-col">
+            <!-- Project 2: Smart POS & Cashier App -->
+            <article class="editorial-project-card">
+              <div class="project-media-frame">
+                <img src="assets/images/project-pos.jpg" alt="Zamasco Smart POS & Cashier" loading="lazy">
+              </div>
+              <div class="project-caption-bar">
+                <div class="project-caption-left">
+                  <h3>ZAMASCO SMART POS &amp; RETAIL</h3>
+                  <p>Offline-first cashier app with Bluetooth thermal receipt printer integration.</p>
+                </div>
+                <div class="project-tags-group">
+                  <span class="project-tag-pill">Flutter</span>
+                  <span class="project-tag-pill">Java</span>
+                  <span class="project-tag-pill">SQLite</span>
+                </div>
+                <a href="https://wa.me/6285694118211" target="_blank" class="pill-btn" style="padding: 0.5rem 1.1rem; font-size: 0.78rem;">
+                  <span>DISCUSS ↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3: Delivery & Logistics Tracking -->
+            <article class="editorial-project-card">
+              <div class="project-media-frame">
+                <img src="assets/images/project-delivery.jpg" alt="DeliverEase Logistics & Route Tracking" loading="lazy">
+              </div>
+              <div class="project-caption-bar">
+                <div class="project-caption-left">
+                  <h3>DELIVEREASE LIVE TRACKING</h3>
+                  <p>Package tracking, courier route optimization, and live GPS map navigation.</p>
+                </div>
+                <div class="project-tags-group">
+                  <span class="project-tag-pill">Java Android</span>
+                  <span class="project-tag-pill">Google Maps</span>
+                  <span class="project-tag-pill">FCM</span>
+                </div>
+                <a href="https://wa.me/6285694118211" target="_blank" class="pill-btn" style="padding: 0.5rem 1.1rem; font-size: 0.78rem;">
+                  <span>DISCUSS ↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & CAREER TIMELINE -->
+    <section class="timeline-section" id="experience">
+      <div class="container">
+        <div class="portfolio-header" style="margin-bottom: 2rem;">
+          <h2 class="portfolio-title">CAREER &amp; TRACK RECORD</h2>
+          <span class="portfolio-subtitle">Professional work history &amp; verifiable contributions</span>
+        </div>
+
+        <div class="timeline-rows">
+          <!-- Row 1 -->
+          <div class="timeline-row">
+            <div class="timeline-period">2023 &mdash; PRESENT</div>
+            <div class="timeline-main">
+              <h3>MOBILE DEVELOPER</h3>
+              <div class="timeline-company">PT CDC Global Informatika</div>
+              <p class="timeline-desc">
+                Architecting and building scalable enterprise mobile solutions with Flutter. Responsible for state management engineering, minimizing API latency, and delivering seamless updates to production.
+              </p>
+            </div>
+            <div class="timeline-skills-col">
+              <span class="project-tag-pill">Flutter</span>
+              <span class="project-tag-pill">State Management</span>
+              <span class="project-tag-pill">REST API</span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="timeline-row">
+            <div class="timeline-period">2019 &mdash; 2023</div>
+            <div class="timeline-main">
+              <h3>MOBILE DEVELOPER</h3>
+              <div class="timeline-company">PT Zamasco</div>
+              <p class="timeline-desc">
+                Developed and maintained diverse client mobile applications in Flutter and Java. Managed the complete Google Play Store upload lifecycle, API integrations, and Figma design implementations.
+              </p>
+            </div>
+            <div class="timeline-skills-col">
+              <span class="project-tag-pill">Flutter</span>
+              <span class="project-tag-pill">Java Mobile</span>
+              <span class="project-tag-pill">Play Store</span>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="timeline-row">
+            <div class="timeline-period">JUL &mdash; DEC 2018</div>
+            <div class="timeline-main">
+              <h3>WEB &amp; MOBILE DEVELOPER (INTERN)</h3>
+              <div class="timeline-company">Salam Enterprise</div>
+              <p class="timeline-desc">
+                Engineered Android native modules in Java and interactive web interfaces with React.js and Node.js.
+              </p>
+            </div>
+            <div class="timeline-skills-col">
+              <span class="project-tag-pill">Java Native</span>
+              <span class="project-tag-pill">React.js</span>
+              <span class="project-tag-pill">Node.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-editorial-header">
+          <div class="contact-pretitle">Have a mobile project or opening?</div>
+          <h2 class="contact-title">LET'S BUILD SOMETHING EXTRAORDINARY</h2>
+          <p style="color: var(--text-secondary); max-width: 550px; margin: 0 auto 2rem;">
+            Whether you need a Flutter app built from scratch, an existing codebase optimized, or a dedicated senior mobile engineer on your team, I'm ready.
+          </p>
+
+          <div class="contact-cta-buttons">
+            <a href="https://wa.me/6285694118211" target="_blank" class="pill-btn">
+              <span>WHATSAPP: 085694118211</span>
+              <div class="btn-arrow-circle">↗</div>
+            </a>
+
+            <a href="mailto:irfanpnf@gmail.com" class="pill-btn pill-btn-outline">
+              <span>EMAIL: IRFANPNF@GMAIL.COM</span>
+              <div class="btn-arrow-circle">↗</div>
+            </a>
+
+            <a href="https://github.com/irfanpriyadi21" target="_blank" class="pill-btn pill-btn-outline">
+              <span>GITHUB PROFILE</span>
+              <div class="btn-arrow-circle">↗</div>
+            </a>
+          </div>
+
+          <div class="contact-meta-strip">
+            <div>LOCATION: <strong>BOGOR / BANDUNG / REMOTE</strong></div>
+            <div>STATUS: <strong>AVAILABLE FOR WORK</strong></div>
+            <div>
+              <button id="copy-phone-btn" class="pill-btn pill-btn-outline" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
+                SALIN WHATSAPP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-editorial container">
+    <div>
+      &copy; 2026 Irfan Priyadi Nurfauzi. All rights reserved.
+    </div>
+    <div>
+      <a href="#hero" style="font-weight: 600; color: var(--text-primary);">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Tersalin ke clipboard</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
