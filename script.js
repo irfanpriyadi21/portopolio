@@ -249,6 +249,11 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'assets/images/project-weather-volcano.jpg',
       alt: 'Preview Peta Satelit Gunung Berapi PVMBG',
       caption: '<strong>Pantauan 69+ Gunung Berapi PVMBG</strong> &mdash; 4 Level status resmi, peta satelit GIS, notifikasi VONA, koordinat, dan radius bahaya kawah.'
+    },
+    'earthquake': {
+      img: 'assets/images/project-weather-dashboard.jpg',
+      alt: 'Preview Pantauan Gempa Bumi & Bencana BMKG',
+      caption: '<strong>Deteksi Gempa Bumi &amp; Bencana</strong> &mdash; Monitoring gempa M ≥ 5.0, potensi tsunami, titik panas karhutla, dan peringatan darurat.'
     }
   };
 
@@ -325,5 +330,224 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // --- 7. PROJECT DETAIL MODAL: IMAGE PARALLAX EXPLORER ---
+  const openParallaxModalBtn = document.getElementById('open-parallax-modal-btn');
+  const parallaxModal = document.getElementById('parallax-modal');
+  const parallaxModalBackdrop = document.getElementById('parallax-modal-backdrop');
+  const parallaxModalCloseBtn = document.getElementById('parallax-modal-close-btn');
+  const parallaxModalCloseFooterBtn = document.getElementById('parallax-modal-close-footer-btn');
+
+  const parallaxPhoneScreenImg = document.getElementById('parallax-modal-phone-screen-img');
+  const parallaxPhoneScreenCaption = document.getElementById('parallax-modal-screen-caption');
+  const parallaxTabBtns = document.querySelectorAll('.parallax-tab-btn');
+  const parallaxPanels = document.querySelectorAll('.parallax-detail-panel');
+
+  const parallaxScreenMetadata = {
+    'home': {
+      img: 'assets/images/project-parallax-home.jpg',
+      alt: 'Preview Layar Image Parallax Beranda',
+      caption: '<strong>Beranda &amp; Featured Parallax 3D</strong> &mdash; Carousel swipe gambar 3D berkedalaman tinggi, chip kategori tematik, dan pencarian instan.'
+    },
+    'grid': {
+      img: 'assets/images/project-parallax-grid.jpg',
+      alt: 'Preview Galeri Masonry Grid Parallax',
+      caption: '<strong>Galeri Masonry Grid</strong> &mdash; Tampilan kisi 2-kolom dinamis, kartu info cerdas, dan parallax offset halus.'
+    },
+    'detail': {
+      img: 'assets/images/project-parallax-detail.jpg',
+      alt: 'Preview Detail Wallpaper Ultra-HD',
+      caption: '<strong>Pratinjau Wallpaper Ultra-HD</strong> &mdash; Resolusi asli 4500 × 3000 px, narasi foto, kurasi tag, dan tombol favorit.'
+    },
+    'feed': {
+      img: 'assets/images/project-parallax-feed.jpg',
+      alt: 'Preview Feed Parallax List',
+      caption: '<strong>Feed Parallax &amp; List</strong> &mdash; Mode scroll vertikal berukuran penuh, lencana Parallax interaktif, dan reset filter.'
+    }
+  };
+
+  function openParallaxModal() {
+    if (parallaxModal && parallaxModalBackdrop) {
+      parallaxModal.classList.add('open');
+      parallaxModalBackdrop.classList.add('open');
+      parallaxModal.setAttribute('aria-hidden', 'false');
+      parallaxModalBackdrop.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeParallaxModal() {
+    if (parallaxModal && parallaxModalBackdrop) {
+      parallaxModal.classList.remove('open');
+      parallaxModalBackdrop.classList.remove('open');
+      parallaxModal.setAttribute('aria-hidden', 'true');
+      parallaxModalBackdrop.setAttribute('aria-hidden', 'true');
+      if (!menuDrawer || !menuDrawer.classList.contains('open')) {
+        document.body.style.overflow = '';
+      }
+    }
+  }
+
+  if (openParallaxModalBtn) openParallaxModalBtn.addEventListener('click', openParallaxModal);
+  if (parallaxModalCloseBtn) parallaxModalCloseBtn.addEventListener('click', closeParallaxModal);
+  if (parallaxModalCloseFooterBtn) parallaxModalCloseFooterBtn.addEventListener('click', closeParallaxModal);
+  if (parallaxModalBackdrop) parallaxModalBackdrop.addEventListener('click', closeParallaxModal);
+
+  // Extend keyboard accessibility for Parallax Modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (parallaxModal && parallaxModal.classList.contains('open')) {
+        closeParallaxModal();
+      }
+    }
+  });
+
+  // Parallax Screen Tab Switching
+  parallaxTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const screenKey = btn.getAttribute('data-parallax-screen');
+      if (!screenKey || !parallaxScreenMetadata[screenKey]) return;
+
+      // Update active button
+      parallaxTabBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      // Update active panel
+      parallaxPanels.forEach(panel => panel.classList.remove('active'));
+      const activePanel = document.getElementById(`parallax-panel-${screenKey}`);
+      if (activePanel) activePanel.classList.add('active');
+
+      // Update phone screen with smooth transition
+      if (parallaxPhoneScreenImg) {
+        parallaxPhoneScreenImg.style.opacity = '0';
+        parallaxPhoneScreenImg.style.transform = 'scale(0.97)';
+        setTimeout(() => {
+          parallaxPhoneScreenImg.src = parallaxScreenMetadata[screenKey].img;
+          parallaxPhoneScreenImg.alt = parallaxScreenMetadata[screenKey].alt;
+          parallaxPhoneScreenImg.style.opacity = '1';
+          parallaxPhoneScreenImg.style.transform = 'scale(1)';
+        }, 180);
+      }
+
+      // Update caption
+      if (parallaxPhoneScreenCaption) {
+        parallaxPhoneScreenCaption.innerHTML = parallaxScreenMetadata[screenKey].caption;
+      }
+    });
+  });
+
+  // --- 8. PROJECT DETAIL MODAL: WANDA FLP MOBILE (HONDA SALES FORCE SUITE) ---
+  const openWandaModalBtn = document.getElementById('open-wanda-modal-btn');
+  const wandaModal = document.getElementById('wanda-modal');
+  const wandaModalBackdrop = document.getElementById('wanda-modal-backdrop');
+  const wandaModalCloseBtn = document.getElementById('wanda-modal-close-btn');
+  const wandaModalCloseFooterBtn = document.getElementById('wanda-modal-close-footer-btn');
+
+  const wandaPhoneScreenImg = document.getElementById('wanda-modal-phone-screen-img');
+  const wandaPhoneScreenCaption = document.getElementById('wanda-modal-screen-caption');
+  const wandaTabBtns = document.querySelectorAll('.wanda-tab-btn');
+  const wandaPanels = document.querySelectorAll('.wanda-detail-panel');
+
+  const wandaScreenMetadata = {
+    'home': {
+      img: 'assets/images/project-wanda-home.jpg',
+      alt: 'Preview Beranda Wanda FLP Mobile & Points',
+      caption: '<strong>Beranda FLP &amp; Gamifikasi Poin</strong> &mdash; Dashboard kinerja sales harian, status pipeline prospek (Suspect, Cold, Hot, SPK), perolehan poin reward Silver, dan presensi check-in dealer.'
+    },
+    'catalog': {
+      img: 'assets/images/project-wanda-catalog.jpg',
+      alt: 'Preview E-Catalog Motor Honda CB150X',
+      caption: '<strong>E-Catalog Motor Honda</strong> &mdash; Galeri warna motor (Amazon Matte Green, Mandala Red), spesifikasi suspensi, dan fitur unggulan unit.'
+    },
+    'prospect': {
+      img: 'assets/images/project-wanda-prospect.jpg',
+      alt: 'Preview CRM Todo List & Prospek Sales',
+      caption: '<strong>Todo List &amp; CRM Prospek</strong> &mdash; Manajemen prospek harian (Today, Pending, Workload, Not Contacted), SLA follow up, dan status lead.'
+    },
+    'price': {
+      img: 'assets/images/project-wanda-price.jpg',
+      alt: 'Preview Simulasi Harga OTR Honda JKT & TGR',
+      caption: '<strong>Simulasi Harga OTR Resmi</strong> &mdash; Rincian harga On The Road Jakarta &amp; Tangerang (CB150R, BeAT Sporty, PCX 150 ABS, CBR 250 R) terupdate.'
+    }
+  };
+
+  function openWandaModal() {
+    if (wandaModal && wandaModalBackdrop) {
+      wandaModal.classList.add('open');
+      wandaModalBackdrop.classList.add('open');
+      wandaModal.setAttribute('aria-hidden', 'false');
+      wandaModalBackdrop.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeWandaModal() {
+    if (wandaModal && wandaModalBackdrop) {
+      wandaModal.classList.remove('open');
+      wandaModalBackdrop.classList.remove('open');
+      wandaModal.setAttribute('aria-hidden', 'true');
+      wandaModalBackdrop.setAttribute('aria-hidden', 'true');
+      if (!menuDrawer || !menuDrawer.classList.contains('open')) {
+        document.body.style.overflow = '';
+      }
+    }
+  }
+
+  if (openWandaModalBtn) openWandaModalBtn.addEventListener('click', openWandaModal);
+  if (wandaModalCloseBtn) wandaModalCloseBtn.addEventListener('click', closeWandaModal);
+  if (wandaModalCloseFooterBtn) wandaModalCloseFooterBtn.addEventListener('click', closeWandaModal);
+  if (wandaModalBackdrop) wandaModalBackdrop.addEventListener('click', closeWandaModal);
+
+  // Extend keyboard accessibility for Wanda Modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (wandaModal && wandaModal.classList.contains('open')) {
+        closeWandaModal();
+      }
+    }
+  });
+
+  // Wanda Screen Tab Switching
+  wandaTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const screenKey = btn.getAttribute('data-wanda-screen');
+      if (!screenKey || !wandaScreenMetadata[screenKey]) return;
+
+      // Update active button
+      wandaTabBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      // Update active panel
+      wandaPanels.forEach(panel => panel.classList.remove('active'));
+      const activePanel = document.getElementById(`wanda-panel-${screenKey}`);
+      if (activePanel) activePanel.classList.add('active');
+
+      // Update phone screen with smooth transition
+      if (wandaPhoneScreenImg) {
+        wandaPhoneScreenImg.style.opacity = '0';
+        wandaPhoneScreenImg.style.transform = 'scale(0.97)';
+        setTimeout(() => {
+          wandaPhoneScreenImg.src = wandaScreenMetadata[screenKey].img;
+          wandaPhoneScreenImg.alt = wandaScreenMetadata[screenKey].alt;
+          wandaPhoneScreenImg.style.opacity = '1';
+          wandaPhoneScreenImg.style.transform = 'scale(1)';
+        }, 180);
+      }
+
+      // Update caption
+      if (wandaPhoneScreenCaption) {
+        wandaPhoneScreenCaption.innerHTML = wandaScreenMetadata[screenKey].caption;
+      }
+    });
+  });
 });
+
 
