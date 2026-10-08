@@ -250,7 +250,73 @@
         </div>
 
         <div class="portfolio-cards-stack">
-          <!-- Featured Project 1: Enterprise Mobile App (Full Width) -->
+          <!-- Featured Project 1: Muslim App (My Alquran Mobile App) -->
+          <article class="editorial-project-card featured-highlight-card">
+            <div class="project-media-frame">
+              <img src="assets/images/project-muslim.jpg" alt="My Alquran - Islamic Companion Mobile App" loading="lazy">
+              <span class="project-badge-pill">FEATURED APP</span>
+            </div>
+            <div class="project-caption-bar">
+              <div class="project-caption-left">
+                <h3>MY ALQURAN &amp; ISLAMIC COMPANION</h3>
+                <p>Aplikasi mobile Al-Qur'an digital komprehensif dengan pemutar audio murottal, jadwal shalat, arah kiblat, dzikir, dan kalender Hijriyah.</p>
+              </div>
+              <div class="project-tags-group">
+                <span class="project-tag-pill">Flutter</span>
+                <span class="project-tag-pill">Dart</span>
+                <span class="project-tag-pill">Murottal Audio</span>
+                <span class="project-tag-pill">Compass &amp; GPS</span>
+                <span class="project-tag-pill">Dark Mode</span>
+                <span class="project-tag-pill">Clean Architecture</span>
+              </div>
+              <div class="project-actions-group">
+                <a href="https://irfanpriyadi21.github.io/My-Al-Quran/" target="_blank" rel="noopener noreferrer" class="pill-btn" style="padding: 0.5rem 1.15rem; font-size: 0.78rem;">
+                  <span>LIVE DEMO ↗</span>
+                </a>
+                <button type="button" class="pill-btn pill-btn-outline" id="open-muslim-modal-btn" aria-haspopup="dialog" style="padding: 0.5rem 1.15rem; font-size: 0.78rem;">
+                  <span>DETAIL &amp; FITUR ↗</span>
+                </button>
+                <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Muslim%20App%20(My%20Alquran)%20Flutter" target="_blank" class="pill-btn pill-btn-outline" style="padding: 0.5rem 1rem; font-size: 0.78rem;">
+                  <span>KONSULTASI</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 2: Weather & Disaster Monitor App -->
+          <article class="editorial-project-card featured-highlight-card" style="border-color: rgba(14, 165, 233, 0.35);">
+            <div class="project-media-frame">
+              <img src="assets/images/project-weather.jpg" alt="Indonesia Weather, Air Quality & Disaster Monitoring App" loading="lazy">
+              <span class="project-badge-pill" style="background: rgba(14, 165, 233, 0.85); border-color: rgba(56, 189, 248, 0.4);">LIVE BMKG &amp; PVMBG</span>
+            </div>
+            <div class="project-caption-bar">
+              <div class="project-caption-left">
+                <h3>CUACA, KUALITAS UDARA, GUNUNG BERAPI &amp; GEMPABUMI</h3>
+                <p>Platform monitoring cuaca presisi &amp; peringatan dini bencana Indonesia terintegrasi data BMKG, AQICN (Polusi PM2.5), peta aktivitas 69+ gunung api PVMBG, dan deteksi gempa bumi real-time.</p>
+              </div>
+              <div class="project-tags-group">
+                <span class="project-tag-pill">Flutter / Web</span>
+                <span class="project-tag-pill">BMKG Open Data</span>
+                <span class="project-tag-pill">AQICN (Air Quality)</span>
+                <span class="project-tag-pill">PVMBG Magma</span>
+                <span class="project-tag-pill">GIS Satellite Maps</span>
+                <span class="project-tag-pill">Peringatan Gempa</span>
+              </div>
+              <div class="project-actions-group">
+                <a href="https://irfanpriyadi21.github.io/weather-app/" target="_blank" rel="noopener noreferrer" class="pill-btn" style="padding: 0.5rem 1.15rem; font-size: 0.78rem;">
+                  <span>LIVE DEMO ↗</span>
+                </a>
+                <button type="button" class="pill-btn pill-btn-outline" id="open-weather-modal-btn" aria-haspopup="dialog" style="padding: 0.5rem 1.15rem; font-size: 0.78rem;">
+                  <span>DETAIL &amp; FITUR ↗</span>
+                </button>
+                <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Weather%20%26%20Disaster%20Monitoring%20App" target="_blank" class="pill-btn pill-btn-outline" style="padding: 0.5rem 1rem; font-size: 0.78rem;">
+                  <span>KONSULTASI</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Project 3: Enterprise Mobile App (Full Width) -->
           <article class="editorial-project-card">
             <div class="project-media-frame">
               <img src="assets/images/project-enterprise.jpg" alt="CDC Enterprise Mobile Suite" loading="lazy">
@@ -411,7 +477,7 @@
           </div>
 
           <div class="contact-meta-strip">
-            <div>LOCATION: <strong>BOGOR / BANDUNG / REMOTE</strong></div>
+            <div>LOCATION: <strong>BOGOR / JAKARTA / REMOTE</strong></div>
             <div>STATUS: <strong>AVAILABLE FOR WORK</strong></div>
             <div>
               <button id="copy-phone-btn" class="pill-btn pill-btn-outline" style="padding: 0.35rem 0.85rem; font-size: 0.78rem;">
@@ -433,6 +499,432 @@
       <a href="#hero" style="font-weight: 600; color: var(--text-primary);">BACK TO TOP ↑</a>
     </div>
   </footer>
+
+  <!-- MODAL: MY ALQURAN MOBILE APP DETAIL & FEATURES -->
+  <div class="project-modal-backdrop" id="muslim-modal-backdrop" aria-hidden="true"></div>
+  <aside class="project-modal-container" id="muslim-modal" role="dialog" aria-modal="true" aria-labelledby="muslim-modal-title" aria-hidden="true">
+    <div class="project-modal-header">
+      <div class="modal-header-info">
+        <span class="modal-badge-tag">MOBILE APPLICATION &bull; FLUTTER &amp; DART</span>
+        <h2 id="muslim-modal-title" class="modal-title">MY ALQURAN &amp; ISLAMIC COMPANION APP</h2>
+        <p class="modal-subtitle">Aplikasi panduan ibadah komprehensif &amp; tilawah Al-Qur'an digital yang dirancang untuk kemudahan dan kenyamanan umat Muslim sehari-hari.</p>
+        <div style="margin-top: 0.75rem; display: flex; gap: 0.65rem; align-items: center; flex-wrap: wrap;">
+          <a href="https://irfanpriyadi21.github.io/My-Al-Quran/" target="_blank" rel="noopener noreferrer" class="pill-btn" style="padding: 0.45rem 1rem; font-size: 0.76rem; background: #7c3aed; border-color: #7c3aed; color: #fff;">
+            <span>BUKA LIVE DEMO ↗</span>
+          </a>
+          <a href="https://irfanpriyadi21.github.io/My-Al-Quran/" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem; color: var(--text-tertiary); text-decoration: underline;">
+            irfanpriyadi21.github.io/My-Al-Quran
+          </a>
+        </div>
+      </div>
+      <button class="modal-close-btn" id="muslim-modal-close-btn" aria-label="Tutup Detail Proyek">✕</button>
+    </div>
+
+    <div class="project-modal-body">
+      <!-- 1. Interactive Screen Showcase (Device Preview + Screen Switcher Tabs) -->
+      <section class="modal-showcase-section">
+        <div class="modal-showcase-grid">
+          <!-- Left Column: Phone Device Mockup -->
+          <div class="modal-phone-preview-col">
+            <div class="modal-phone-chassis">
+              <div class="phone-camera-island"></div>
+              <div class="phone-screen-wrapper">
+                <img id="modal-phone-screen-img" src="assets/images/project-muslim-dashboard.jpg" alt="Preview Layar My Alquran App" class="modal-screen-active-img">
+              </div>
+            </div>
+            <div class="phone-preview-caption" id="modal-screen-caption">
+              <strong>Layar Beranda / Dashboard</strong> &mdash; Jam digital, penanggalan Hijriyah, 8 menu cepat, dan kutipan ayat harian.
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Tabs & Screen Deep-Dive -->
+          <div class="modal-screen-tabs-col">
+            <div class="modal-tabs-header">
+              <span class="modal-section-label">PILIH TAMPILAN APLIKASI:</span>
+              <div class="modal-screen-tab-list" role="tablist">
+                <button type="button" class="screen-tab-btn active" data-screen="dashboard" role="tab" aria-selected="true">
+                  <span class="tab-icon">🕌</span>
+                  <span class="tab-label">Beranda / Dashboard</span>
+                </button>
+                <button type="button" class="screen-tab-btn" data-screen="quran-list" role="tab" aria-selected="false">
+                  <span class="tab-icon">📖</span>
+                  <span class="tab-label">Indeks Al-Qur'an</span>
+                </button>
+                <button type="button" class="screen-tab-btn" data-screen="quran-detail" role="tab" aria-selected="false">
+                  <span class="tab-icon">🎧</span>
+                  <span class="tab-label">Baca Ayat &amp; Murottal</span>
+                </button>
+                <button type="button" class="screen-tab-btn" data-screen="profile" role="tab" aria-selected="false">
+                  <span class="tab-icon">🌙</span>
+                  <span class="tab-label">Profil &amp; Dark Mode</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Dynamic Tab Content Panels -->
+            <div class="modal-tab-content-panels">
+              <!-- Panel 1: Dashboard -->
+              <div class="screen-detail-panel active" id="panel-dashboard">
+                <h4 class="panel-screen-title">Beranda Utama (Dashboard Ibadah Terpadu)</h4>
+                <p class="panel-screen-desc">
+                  Dirancang sebagai pusat aktivitas harian pengguna dengan tata letak bersih, intuitif, dan bebas distraksi, memudahkan navigasi ke seluruh fitur ibadah penting dalam satu sentuhan.
+                </p>
+                <ul class="panel-feature-list">
+                  <li><strong>Jam Digital &amp; Penanggalan Kalender Hijriyah:</strong> Menampilkan waktu lokal presisi serta tanggal kalender Islam otomatis (contoh: <em>27 Rabi' Al-Thani 1448 H</em>).</li>
+                  <li><strong>8 Menu Akses Cepat (Quick Access Grid):</strong>
+                    <div class="mini-tag-grid">
+                      <span class="mini-menu-chip">1. Al-Quran</span>
+                      <span class="mini-menu-chip">2. Doa Harian</span>
+                      <span class="mini-menu-chip">3. Arah Kiblat</span>
+                      <span class="mini-menu-chip">4. Hadits</span>
+                      <span class="mini-menu-chip">5. Jadwal Shalat</span>
+                      <span class="mini-menu-chip">6. Dzikir &amp; Tasbih</span>
+                      <span class="mini-menu-chip">7. Masjid Terdekat</span>
+                      <span class="mini-menu-chip">8. Fitur Lainnya</span>
+                    </div>
+                  </li>
+                  <li><strong>Widget "Kata Mutiara Islami":</strong> Menghadirkan ayat-ayat tadabbur Al-Qur'an harian (contoh: <em>QS. Al-Baqarah: 216</em>) untuk motivasi dan ketenangan hati pengguna.</li>
+                  <li><strong>Header Personal &amp; Notifikasi:</strong> Menyapa pengguna secara personal dengan status akun serta ikon lonceng untuk notifikasi waktu sholat dan pengingat tilawah.</li>
+                </ul>
+              </div>
+
+              <!-- Panel 2: Quran List -->
+              <div class="screen-detail-panel" id="panel-quran-list">
+                <h4 class="panel-screen-title">Katalog &amp; Indeks 114 Surah Al-Qur'an</h4>
+                <p class="panel-screen-desc">
+                  Memungkinkan eksplorasi seluruh surah Al-Qur'an dengan pencarian instan dan filter kategori tempat turunnya wahyu, mempermudah pengguna menemukan surat yang ingin dibaca.
+                </p>
+                <ul class="panel-feature-list">
+                  <li><strong>Pencarian Cerdas (Live Search):</strong> Fitur filter cepat berdasarkan nama surah, nomor surat, maupun terjemahan/arti surat.</li>
+                  <li><strong>Filter Kategori Surah:</strong> Tab pengelompokan surah <em>Semua</em>, <em>Makkiyyah</em>, dan <em>Madaniyyah</em>.</li>
+                  <li><strong>Ornamen Lencana Bintang Islami:</strong> Nomor urut surah dihiasi ornamen bintang segi delapan (Islamic Octagram star badge) dengan aksen warna ungu yang anggun.</li>
+                  <li><strong>Info Metadata Surah:</strong> Setiap kartu surah memuat nama latin, kaligrafi Arab resmi (misal: الفاتحة, البقرة, آل عمران), tempat turun surat, dan total jumlah ayat.</li>
+                  <li><strong>Kontrol Ukuran Teks ("TT"):</strong> Tombol penyesuai ukuran font langsung dari bar judul untuk kenyamanan pembaca.</li>
+                </ul>
+              </div>
+
+              <!-- Panel 3: Quran Detail -->
+              <div class="screen-detail-panel" id="panel-quran-detail">
+                <h4 class="panel-screen-title">Baca Ayat &amp; Pemutar Audio Murottal (Surat View)</h4>
+                <p class="panel-screen-desc">
+                  Pengalaman membaca Al-Qur'an digital yang imersif dan terstruktur dengan penyajian teks Arab berkualitas tinggi, transliterasi Latin, terjemahan resmi, serta audio qari merdu per ayat.
+                </p>
+                <ul class="panel-feature-list">
+                  <li><strong>Header Surah Eksklusif:</strong> Banner gradien ungu dengan kaligrafi Basmalah, informasi tempat turun, total ayat, dan tombol <em>ⓘ Info Surat</em> untuk melihat asbabun nuzul dan latar belakang.</li>
+                  <li><strong>Tiga Lapisan Pembacaan per Ayat:</strong>
+                    Teks Arab beresolusi tinggi yang nyaman dibaca, transliterasi Latin (fonetik bacaan), serta terjemahan bahasa Indonesia resmi Kemenag.
+                  </li>
+                  <li><strong>Fitur Interaktif per Ayat:</strong>
+                    <div class="mini-tag-grid">
+                      <span class="mini-menu-chip">Pemutar Murottal Audio per Ayat</span>
+                      <span class="mini-menu-chip">Bagikan Ayat (Share Teks)</span>
+                      <span class="mini-menu-chip">Bookmark / Penanda Bacaan Terakhir</span>
+                    </div>
+                  </li>
+                  <li><strong>Mode Baca Mushaf PDF:</strong> Ikon akses cepat untuk menampilkan versi PDF atau mushaf cetak standar.</li>
+                </ul>
+              </div>
+
+              <!-- Panel 4: Profile -->
+              <div class="screen-detail-panel" id="panel-profile">
+                <h4 class="panel-screen-title">Profil Pengguna &amp; Preferensi Aplikasi</h4>
+                <p class="panel-screen-desc">
+                  Pusat kustomisasi pengalaman pengguna yang mencakup pengaturan tema visual, bahasa antarmuka, privasi, dan akun pengguna.
+                </p>
+                <ul class="panel-feature-list">
+                  <li><strong>Dukungan Dark Mode (Mode Gelap):</strong> Toggle sakelar instan untuk beralih antara tema terang dan tema gelap yang ramah mata saat membaca di malam hari atau ruangan temaram.</li>
+                  <li><strong>Pengaturan Multi-Bahasa:</strong> Dukungan lokalisasi bahasa (Bahasa Indonesia) untuk seluruh teks navigasi aplikasi.</li>
+                  <li><strong>Manajemen Profil &amp; Akun:</strong> Informasi akun pengguna (nama, email, inisial avatar) untuk sinkronisasi bookmark dan riwayat bacaan.</li>
+                  <li><strong>Kebijakan Privasi &amp; Tentang Aplikasi:</strong> Menjamin transparansi penggunaan sensor lokasi/GPS hanya untuk kebutuhan perhitungan kiblat dan jadwal sholat.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Technical Architecture & Engineering Pillars -->
+      <section class="modal-arch-section">
+        <h3 class="modal-section-title">ARSITEKTUR TEKNIS &amp; HIGHLIGHT IMPLEMENTASI</h3>
+        <div class="modal-arch-grid">
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🏛️</span>
+              <h4>CLEAN ARCHITECTURE &amp; BLOC</h4>
+            </div>
+            <p>
+              Struktur kode modular memisahkan Data Layer (API &amp; Local DB), Domain Layer (Use Cases), dan Presentation Layer. Menggunakan BLoC untuk alur state management yang predictable, testable, dan reaktif.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">⚡</span>
+              <h4>OFFLINE-FIRST &amp; SQLITE CACHING</h4>
+            </div>
+            <p>
+              Seluruh basis data ayat Al-Qur'an, terjemahan, dan bookmark di-cache secara lokal ke dalam SQLite database. Memungkinkan pengguna membaca seluruh surah tanpa buffering maupun ketergantungan koneksi internet.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🧭</span>
+              <h4>SENSOR KOMPAS &amp; GPS REAL-TIME</h4>
+            </div>
+            <p>
+              Integrasi sensor magnetometer perangkat dan GPS geolocator untuk menghitung azimut sudut Kiblat ke arah Ka'bah di Mekkah secara akurat, serta menentukan jadwal shalat 5 waktu otomatis berdasarkan koordinat bujur-lintang.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🎧</span>
+              <h4>AUDIO STREAMING ENGINE</h4>
+            </div>
+            <p>
+              Pemutar audio Murottal qari per ayat dengan manajemen audio playback state yang presisi, mendukung background audio session, kontrol pause/resume yang responsif, dan konsumsi baterai yang efisien.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Tech Stack Badges & Specifications -->
+      <section class="modal-specs-section">
+        <h3 class="modal-section-title">TEKNOLOGI &amp; DEPENDENSI UTAMA</h3>
+        <div class="modal-specs-badges">
+          <div class="spec-pill"><strong>Framework:</strong> Flutter 3.x (Dart 3.x)</div>
+          <div class="spec-pill"><strong>State Management:</strong> flutter_bloc / Provider</div>
+          <div class="spec-pill"><strong>Local Database:</strong> SQLite (sqflite) &amp; SharedPreferences</div>
+          <div class="spec-pill"><strong>Audio Engine:</strong> just_audio / audioplayers</div>
+          <div class="spec-pill"><strong>Sensors &amp; GPS:</strong> geolocator &amp; sensors_plus</div>
+          <div class="spec-pill"><strong>Typography:</strong> Google Fonts Arabic &amp; IndoPak Unicode</div>
+          <div class="spec-pill"><strong>Theming:</strong> Custom Material 3 Dark &amp; Light Engine</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="project-modal-footer">
+      <div class="modal-footer-left">
+        <span>Tertarik mendiskusikan atau mencoba aplikasi langsung?</span>
+      </div>
+      <div class="modal-footer-actions">
+        <a href="https://irfanpriyadi21.github.io/My-Al-Quran/" target="_blank" rel="noopener noreferrer" class="pill-btn" style="background: #7c3aed; border-color: #7c3aed; color: #fff;">
+          <span>BUKA LIVE DEMO ↗</span>
+        </a>
+        <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Muslim%20App%20(My%20Alquran)%20Flutter" target="_blank" class="pill-btn pill-btn-outline">
+          <span>KONSULTASI VIA WHATSAPP ↗</span>
+        </a>
+        <button type="button" class="pill-btn pill-btn-outline" id="muslim-modal-close-footer-btn">
+          <span>TUTUP</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MODAL: WEATHER & DISASTER MONITORING APP DETAIL & FEATURES -->
+  <div class="project-modal-backdrop" id="weather-modal-backdrop" aria-hidden="true"></div>
+  <aside class="project-modal-container" id="weather-modal" role="dialog" aria-modal="true" aria-labelledby="weather-modal-title" aria-hidden="true">
+    <div class="project-modal-header">
+      <div class="modal-header-info">
+        <span class="modal-badge-tag" style="color: #0284c7;">EARLY WARNING &amp; DISASTER INTELLIGENCE &bull; FLUTTER / WEB</span>
+        <h2 id="weather-modal-title" class="modal-title">PANTAUAN CUACA, KUALITAS UDARA, GUNUNG BERAPI &amp; GEMPABUMI</h2>
+        <p class="modal-subtitle">Aplikasi pemantauan cuaca hiperlokal, kualitas udara (AQI), status vulkanologi PVMBG, dan deteksi bencana terpadu secara real-time di seluruh Indonesia.</p>
+        <div style="margin-top: 0.75rem; display: flex; gap: 0.65rem; align-items: center; flex-wrap: wrap;">
+          <a href="https://irfanpriyadi21.github.io/weather-app/" target="_blank" rel="noopener noreferrer" class="pill-btn" style="padding: 0.45rem 1rem; font-size: 0.76rem; background: #0284c7; border-color: #0284c7; color: #fff;">
+            <span>BUKA LIVE DEMO ↗</span>
+          </a>
+          <a href="https://irfanpriyadi21.github.io/weather-app/" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem; color: var(--text-tertiary); text-decoration: underline;">
+            irfanpriyadi21.github.io/weather-app
+          </a>
+        </div>
+      </div>
+      <button class="modal-close-btn" id="weather-modal-close-btn" aria-label="Tutup Detail Proyek">✕</button>
+    </div>
+
+    <div class="project-modal-body">
+      <!-- 1. Interactive Screen Showcase -->
+      <section class="modal-showcase-section">
+        <div class="modal-showcase-grid">
+          <!-- Left Column: Phone Device Mockup -->
+          <div class="modal-phone-preview-col">
+            <div class="modal-phone-chassis" style="border-color: #1e293b;">
+              <div class="phone-camera-island"></div>
+              <div class="phone-screen-wrapper">
+                <img id="weather-modal-phone-screen-img" src="assets/images/project-weather-dashboard.jpg" alt="Preview Layar Weather App" class="modal-screen-active-img">
+              </div>
+            </div>
+            <div class="phone-preview-caption" id="weather-modal-screen-caption">
+              <strong>Layar Perkiraan Cuaca &amp; BMKG</strong> &mdash; Suhu real-time 30°C, peringatan dini BMKG, kelembapan, angin, UV, dan radar kebencanaan.
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Tabs & Screen Deep-Dive -->
+          <div class="modal-screen-tabs-col">
+            <div class="modal-tabs-header">
+              <span class="modal-section-label">PILIH TAMPILAN FITUR:</span>
+              <div class="modal-screen-tab-list" role="tablist">
+                <button type="button" class="weather-tab-btn active" data-weather-screen="dashboard" role="tab" aria-selected="true">
+                  <span class="tab-icon">☀️</span>
+                  <span class="tab-label">Cuaca &amp; Peringatan BMKG</span>
+                </button>
+                <button type="button" class="weather-tab-btn" data-weather-screen="airquality" role="tab" aria-selected="false">
+                  <span class="tab-icon">💨</span>
+                  <span class="tab-label">Kualitas Udara (AQI)</span>
+                </button>
+                <button type="button" class="weather-tab-btn" data-weather-screen="volcano" role="tab" aria-selected="false">
+                  <span class="tab-icon">🌋</span>
+                  <span class="tab-label">Peta Gunung Berapi</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Dynamic Tab Content Panels -->
+            <div class="modal-tab-content-panels">
+              <!-- Panel 1: Cuaca & BMKG -->
+              <div class="weather-detail-panel active" id="weather-panel-dashboard">
+                <h4 class="panel-screen-title">Perkiraan Cuaca Presisi &amp; Peringatan Dini BMKG</h4>
+                <p class="panel-screen-desc">
+                  Menyajikan data cuaca akurat berbasis geolokasi pengguna dengan integrasi API resmi BMKG untuk memantau kondisi atmosfer secara langsung dan mendeteksi potensi cuaca ekstrem.
+                </p>
+                <ul class="panel-feature-list">
+                  <li><strong>Metrik Cuaca Lengkap:</strong> Suhu aktual (30°C), "Terasa seperti" (35°C), Kelembapan udara (66%), Kecepatan angin (3 km/h), dan Indeks Radiasi UV harian.</li>
+                  <li><strong>Banner Peringatan Dini BMKG Aktif:</strong> Deteksi real-time wilayah berpotensi cuaca ekstrem (contoh: <em>Peringatan 5 Wilayah &mdash; Hujan Lebat disertai Petir di Aceh</em>).</li>
+                  <li><strong>Radar Pintasan Kebencanaan Nasional:</strong>
+                    <div class="mini-tag-grid">
+                      <span class="mini-menu-chip" style="color: #f87171;">🔥 Titik Panas (Karhutla)</span>
+                      <span class="mini-menu-chip" style="color: #fb923c;">🌍 Gempa Bumi (M ≥ 5.0)</span>
+                      <span class="mini-menu-chip" style="color: #facc15;">⚠️ Peringatan Cuaca Ekstrem</span>
+                      <span class="mini-menu-chip" style="color: #f472b6;">🌋 Gunung Api (PVMBG Magma)</span>
+                    </div>
+                  </li>
+                  <li><strong>Berita &amp; Buletin Meteorologi:</strong> Feed informasi dan edukasi kebencanaan resmi BMKG langsung ke genggaman pengguna.</li>
+                </ul>
+              </div>
+
+              <!-- Panel 2: Air Quality -->
+              <div class="weather-detail-panel" id="weather-panel-airquality">
+                <h4 class="panel-screen-title">Indeks Kualitas Udara (AQI - Air Quality Index)</h4>
+                <p class="panel-screen-desc">
+                  Pemantauan tingkat polusi udara berbasis stasiun pengukur AQICN dan BMKG dengan analisis konsentrasi partikel mikro berbahaya (PM2.5) serta panduan proteksi kesehatan.
+                </p>
+                <ul class="panel-feature-list">
+                  <li><strong>Indeks Polusi AQI US &amp; Kategori Warna:</strong> Skor AQI real-time (contoh: <em>96 AQI &mdash; Kategori Sedang</em>) dengan indikator visual berkode warna standar internasional.</li>
+                  <li><strong>Multi-Kota &amp; Ranking Kualitas Udara:</strong> Fitur perbandingan polusi udara antar wilayah (Jakarta, Bogor, Depok, dan kota-kota besar lainnya).</li>
+                  <li><strong>Parameter Fisika Udara:</strong> Menampilkan suhu lingkungan, kelembapan relatif, kecepatan angin, serta tekanan atmosfer (1011 hPa).</li>
+                  <li><strong>Panduan &amp; Rekomendasi Kesehatan Cerdas:</strong>
+                    <div class="mini-tag-grid">
+                      <span class="mini-menu-chip">😷 Rekomendasi Masker (Wajib / Opsional)</span>
+                      <span class="mini-menu-chip">🪟 Panduan Ventilasi Ruangan</span>
+                      <span class="mini-menu-chip">🏃 Saran Aktivitas Luar Ruangan</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Panel 3: Volcano & Earthquake -->
+              <div class="weather-detail-panel" id="weather-panel-volcano">
+                <h4 class="panel-screen-title">Peta Satelit Aktivitas Gunung Berapi &amp; Gempa Bumi</h4>
+                <p class="panel-screen-desc">
+                  Pemetaan visual interaktif berbasis citra satelit resolusi tinggi untuk memantau 69+ gunung api di seluruh gugusan kepulauan Indonesia sesuai data pos pengamatan PVMBG Badan Geologi.
+                </p>
+                <ul class="panel-feature-list">
+                  <li><strong>Klasifikasi 4 Tingkat Status PVMBG:</strong>
+                    <div class="mini-tag-grid">
+                      <span class="mini-menu-chip" style="color: #22c55e;">🟢 Level I &bull; Normal</span>
+                      <span class="mini-menu-chip" style="color: #eab308;">🟡 Level II &bull; Waspada</span>
+                      <span class="mini-menu-chip" style="color: #f97316;">🟠 Level III &bull; Siaga</span>
+                      <span class="mini-menu-chip" style="color: #ef4444;">🔴 Level IV &bull; Awas</span>
+                    </div>
+                  </li>
+                  <li><strong>Peta Interaktif GIS &amp; Titik Koordinat:</strong> Filter status gunung aktif (28 gunung api aktif), pencarian nama gunung, dan penanda visual glowing marker.</li>
+                  <li><strong>Notifikasi VONA (Aviation):</strong> Menampilkan status abu vulkanik untuk keselamatan penerbangan (contoh: <em>VONA Notifikasi Terbit &mdash; Gunung Anak Krakatau / Tangkuban Parahu</em>).</li>
+                  <li><strong>Zona Radius Bahaya &amp; Gempa:</strong> Radius aman kawah puncak (1.5 - 3 km), elevasi ketinggian (mdpl), serta integrasi katalog gempa tektonik &amp; vulkanik.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Technical Architecture & Data Pipeline -->
+      <section class="modal-arch-section">
+        <h3 class="modal-section-title">ARSITEKTUR TEKNIS &amp; INTEGRASI MULTI-ENDPOINT</h3>
+        <div class="modal-arch-grid">
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🛰️</span>
+              <h4>INTEGRASI BMKG &amp; PVMBG API</h4>
+            </div>
+            <p>
+              Sinkronisasi data real-time dengan Open Data BMKG (prakiraan cuaca, gempa M ≥ 5.0, radar cuaca) serta feed resmi PVMBG Magma Indonesia untuk status erupsi vulkanik terkini.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">💨</span>
+              <h4>AQICN SENSOR INTELLIGENCE</h4>
+            </div>
+            <p>
+              Pengolahan data stasiun kualitas udara dunia (AQICN) untuk menghitung indeks partikel PM2.5 &amp; PM10, menghasilkan rekomendasi kesehatan preventif secara otomatis.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🗺️</span>
+              <h4>GIS SATELLITE MAPPING LAYER</h4>
+            </div>
+            <p>
+              Rendering peta geospasial interaktif menggunakan tiles satelit berkecepatan tinggi dengan clustering marker 69+ titik gunung api dan kalkulasi radius bahaya kawah presisi.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">⚡</span>
+              <h4>DARK MODE &amp; OFFLINE-READY CACHE</h4>
+            </div>
+            <p>
+              Antarmuka bernuansa dark slate modern dengan konsumsi baterai rendah (AMOLED friendly), didukung caching lokal agar informasi darurat terakhir tetap dapat dibaca tanpa internet.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Tech Specs -->
+      <section class="modal-specs-section">
+        <h3 class="modal-section-title">TEKNOLOGI &amp; SUMBER DATA</h3>
+        <div class="modal-specs-badges">
+          <div class="spec-pill"><strong>Framework:</strong> Flutter / Modern Web</div>
+          <div class="spec-pill"><strong>Weather Data:</strong> BMKG Open Data &amp; OpenWeather</div>
+          <div class="spec-pill"><strong>Air Quality:</strong> AQICN API (PM2.5 / PM10)</div>
+          <div class="spec-pill"><strong>Volcanology:</strong> PVMBG Magma Indonesia &amp; VONA</div>
+          <div class="spec-pill"><strong>Map Engine:</strong> Interactive GIS Satellite Layer</div>
+          <div class="spec-pill"><strong>Theming:</strong> Dark Slate Cyberpunk UI</div>
+          <div class="spec-pill"><strong>Deploy:</strong> GitHub Pages Hosted</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="project-modal-footer">
+      <div class="modal-footer-left">
+        <span>Coba aplikasi live sekarang atau diskusikan kebutuhan integrasi data serupa:</span>
+      </div>
+      <div class="modal-footer-actions">
+        <a href="https://irfanpriyadi21.github.io/weather-app/" target="_blank" rel="noopener noreferrer" class="pill-btn" style="background: #0284c7; border-color: #0284c7; color: #fff;">
+          <span>BUKA LIVE DEMO ↗</span>
+        </a>
+        <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Weather%20%26%20Disaster%20Monitoring%20App" target="_blank" class="pill-btn pill-btn-outline">
+          <span>KONSULTASI VIA WHATSAPP ↗</span>
+        </a>
+        <button type="button" class="pill-btn pill-btn-outline" id="weather-modal-close-footer-btn">
+          <span>TUTUP</span>
+        </button>
+      </div>
+    </div>
+  </aside>
 
   <!-- Toast Notification -->
   <div class="toast" id="toast">Tersalin ke clipboard</div>
