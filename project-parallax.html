@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Image Parallax Visual Depth Explorer - Aplikasi galeri visual interaktif dengan simulasi kedalaman multi-layer 3D Parallax, integrasi Pixabay REST API, dan wallpaper Ultra-HD oleh Irfan Priyadi Nurfauzi.">
+  <meta name="author" content="Irfan Priyadi Nurfauzi">
+  <title>Image Parallax - Visual Depth Explorer | Detail Proyek Irfan Priyadi</title>
+
+  <!-- Google Fonts: Oswald, Syne, Instrument Serif, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=20261015-06">
+</head>
+
+<body>
+
+  <!-- TOP HEADER / NAV -->
+  <header class="header-nav">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-tag">
+        <span class="brand-dot"></span>
+        <span>IRFAN PRIYADI</span>
+      </a>
+
+      <div class="nav-right-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Ganti Tema">
+          <span id="theme-icon">◐</span>
+          <span id="theme-label">STONE</span>
+        </button>
+
+        <a href="index.html#portfolio" class="pill-btn pill-btn-outline" style="padding: 0.45rem 1rem; font-size: 0.78rem;">
+          <span>← PORTOFOLIO</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="detail-page-wrapper parallax-page-theme">
+    <div class="container">
+
+      <!-- Breadcrumb & Back Link -->
+      <nav class="detail-top-nav-bar" aria-label="Breadcrumb">
+        <a href="index.html#portfolio" class="detail-back-link">
+          <span>←</span>
+          <span>Kembali ke Portofolio</span>
+        </a>
+        <div class="detail-breadcrumb">
+          <a href="index.html">Beranda</a>
+          <span class="sep">/</span>
+          <a href="index.html#portfolio">Portofolio</a>
+          <span class="sep">/</span>
+          <span style="color: var(--text-primary); font-weight: 700;">Image Parallax Explorer</span>
+        </div>
+      </nav>
+
+      <!-- HERO BOX (RICH GLASSMORPHISM CARD) -->
+      <section class="detail-hero-box parallax-accent">
+        <!-- Hero Header Row: Icon + Title & Badges in Unified Modern App Layout -->
+        <div class="detail-hero-header-row">
+          <div class="detail-app-icon-frame parallax-icon-frame" style="width: 82px; height: 82px; min-width: 82px; max-width: 82px; border-radius: 20px; overflow: hidden; flex-shrink: 0;">
+            <span style="font-size: 2.2rem; line-height: 1;">🌌</span>
+          </div>
+          <div class="detail-hero-header-text">
+            <div class="detail-badge-group">
+              <span class="detail-badge-pill badge-parallax-violet">
+                <span class="pulse-indicator"></span> 3D MOTION &bull; FLUTTER / WEB
+              </span>
+              <span class="detail-badge-pill badge-status-green">
+                ✓ LIVE DEMO READY
+              </span>
+              <span class="detail-badge-pill badge-enterprise">
+                PIXABAY REST API INTEGRATION
+              </span>
+            </div>
+            <h1 class="detail-hero-title">
+              IMAGE PARALLAX
+              <span style="color: #8b5cf6; font-weight: 700;">&mdash; VISUAL DEPTH EXPLORER</span>
+            </h1>
+            <div class="detail-identity-sub">INTERACTIVE 3D PARALLAX EXPLORER &bull; FLUTTER WEB &amp; MOBILE</div>
+          </div>
+        </div>
+
+        <p class="detail-hero-subtitle">
+          Aplikasi galeri visual futuristik dengan simulasi kedalaman multi-layer 3D Parallax saat pengguna menggeser dan menelusuri katalog gambar. Menggabungkan kalkulasi matriks transformasi 3D kustom, arsitektur Masonry Grid responsif, integrasi Pixabay REST API jutaan foto, dan preview resolusi Ultra-HD.
+        </p>
+
+        <!-- Metric Highlights Strip -->
+        <div class="detail-metrics-row">
+          <div class="detail-metric-card">
+            <div class="metric-number">Matrix4</div>
+            <div class="metric-label">3D Real-time Flow Transform</div>
+          </div>
+          <div class="detail-metric-card">
+            <div class="metric-number">60 FPS</div>
+            <div class="metric-label">Smooth Parallax Scrolling</div>
+          </div>
+          <div class="detail-metric-card">
+            <div class="metric-number">1,000,000+</div>
+            <div class="metric-label">Pixabay HD Photos Synced</div>
+          </div>
+          <div class="detail-metric-card">
+            <div class="metric-number">4.5K px</div>
+            <div class="metric-label">Ultra-HD Wallpaper Details</div>
+          </div>
+        </div>
+
+        <!-- 4-Card Metadata Matrix -->
+        <div class="detail-meta-grid">
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">🎮</span>
+              <span class="label">Kategori Aplikasi</span>
+            </div>
+            <span class="value">Interactive 3D Motion, Photo Discovery &amp; Wallpaper Hub</span>
+          </div>
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">👤</span>
+              <span class="label">Peran &amp; Tanggung Jawab</span>
+            </div>
+            <span class="value">Mobile &amp; Web UI Developer (Flutter Matrix4 Transform, Custom Flow Delegate)</span>
+          </div>
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">🛠️</span>
+              <span class="label">Tech Stack Inti</span>
+            </div>
+            <span class="value">Flutter 3.x, Dart, Custom Flow Delegate, Pixabay REST API, CachedNetworkImage</span>
+          </div>
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">🌐</span>
+              <span class="label">Live Demo &amp; Hosting</span>
+            </div>
+            <span class="value">GitHub Pages (<code>irfanpriyadi21.github.io/flutter-search-image-parallax</code>)</span>
+          </div>
+        </div>
+
+        <!-- Action Buttons Group -->
+        <div class="detail-hero-actions">
+          <a href="https://irfanpriyadi21.github.io/flutter-search-image-parallax/" target="_blank"
+            rel="noopener noreferrer" class="pill-btn btn-primary-action">
+            <span>BUKA LIVE DEMO WEB ↗</span>
+          </a>
+          <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Image%20Parallax%20Flutter"
+            target="_blank" rel="noopener noreferrer" class="pill-btn btn-whatsapp-action">
+            <span>KONSULTASI VIA WHATSAPP ↗</span>
+          </a>
+          <a href="index.html#portfolio" class="pill-btn pill-btn-outline" style="padding: 0.75rem 1.4rem;">
+            <span>SEMUA PROYEK</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 1. INTERACTIVE SCREEN SHOWCASE SECTION -->
+      <section class="detail-content-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">SHOWCASE ANTARMUKA &amp; FITUR</span>
+          <h2 class="detail-section-title">EKSPLORASI TAMPILAN &amp; FITUR UTAMA APLIKASI</h2>
+        </div>
+
+        <div class="detail-showcase-container">
+          <div class="modal-showcase-grid">
+
+            <!-- Left: Interactive Smartphone Mockup -->
+            <div class="modal-phone-preview-col">
+              <div class="modal-phone-chassis" style="border-color: #2e2642;">
+                <div class="phone-camera-island"></div>
+                <div class="phone-screen-wrapper">
+                  <img id="phone-screen-img" src="assets/images/project-parallax-home.jpg"
+                    alt="Preview Layar Image Parallax Beranda" class="modal-screen-active-img">
+                </div>
+              </div>
+              <div class="phone-preview-caption" id="phone-screen-caption">
+                <strong>Beranda &amp; Featured Parallax 3D</strong> &mdash; Carousel swipe gambar 3D berkedalaman tinggi, chip kategori tematik, dan pencarian instan.
+              </div>
+            </div>
+
+            <!-- Right: Rich Feature Tabs & Content Panel -->
+            <div class="modal-screen-tabs-col">
+              <div class="modal-tabs-header">
+                <span class="modal-section-label">PILIH MODUL FITUR UNTUK DILIHAT:</span>
+
+                <!-- Feature Selector Cards -->
+                <div class="detail-tab-cards-list" role="tablist">
+                  <!-- Tab 1: Home -->
+                  <div class="detail-feature-tab-card detail-tab-btn active"
+                    data-target-panel="parallax-panel-home"
+                    data-img="assets/images/project-parallax-home.jpg"
+                    data-alt="Preview Layar Image Parallax Beranda"
+                    data-caption="<strong>Beranda &amp; Featured Parallax 3D</strong> &mdash; Carousel swipe gambar 3D berkedalaman tinggi, chip kategori tematik, dan pencarian instan."
+                    role="tab" aria-selected="true">
+                    <div class="detail-tab-icon-box">✨</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Beranda &amp; Hero 3D</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Carousel swipe 3D berkedalaman tinggi, chip kategori &amp; instant search</div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 2: Grid -->
+                  <div class="detail-feature-tab-card detail-tab-btn"
+                    data-target-panel="parallax-panel-grid"
+                    data-img="assets/images/project-parallax-grid.jpg"
+                    data-alt="Preview Galeri Masonry Grid Parallax"
+                    data-caption="<strong>Galeri Masonry Grid</strong> &mdash; Tampilan kisi 2-kolom dinamis, kartu info cerdas, dan parallax offset halus."
+                    role="tab" aria-selected="false">
+                    <div class="detail-tab-icon-box">🖼️</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Galeri Masonry Grid</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Tata letak 2-kolom responsif, parallax scroll offset &amp; smart card</div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 3: Detail -->
+                  <div class="detail-feature-tab-card detail-tab-btn"
+                    data-target-panel="parallax-panel-detail"
+                    data-img="assets/images/project-parallax-detail.jpg"
+                    data-alt="Preview Detail Wallpaper Ultra-HD"
+                    data-caption="<strong>Pratinjau Wallpaper Ultra-HD</strong> &mdash; Resolusi asli 4500 × 3000 px, narasi foto, kurasi tag, dan tombol favorit."
+                    role="tab" aria-selected="false">
+                    <div class="detail-tab-icon-box">📱</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Detail Wallpaper HD</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Resolusi asli hingga 4500px, fotografer credit &amp; kurasi tag</div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 4: Feed -->
+                  <div class="detail-feature-tab-card detail-tab-btn"
+                    data-target-panel="parallax-panel-feed"
+                    data-img="assets/images/project-parallax-feed.jpg"
+                    data-alt="Preview Feed Parallax List"
+                    data-caption="<strong>Feed Parallax &amp; List</strong> &mdash; Mode scroll vertikal berukuran penuh, lencana Parallax interaktif, dan reset filter."
+                    role="tab" aria-selected="false">
+                    <div class="detail-tab-icon-box">📜</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Feed Parallax &amp; List</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Mode vertikal layar penuh, multi-layer flow &amp; dynamic caching</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panels Content -->
+              <div class="modal-tab-content-panels">
+                <!-- Panel 1: Home -->
+                <div class="detail-screen-panel active" id="parallax-panel-home">
+                  <h4 class="panel-screen-title">Beranda Eksplorasi &amp; Featured Parallax 3D</h4>
+                  <p class="panel-screen-desc">
+                    Halaman beranda bergaya cyberpunk modern yang memikat dengan kartu sorotan Featured Parallax 3D, navigasi chip kategori dinamis, dan kolom live search.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Featured Parallax 3D Carousel:</strong> Kartu sorotan dengan fisika geser halus (swipe physics) yang menghadirkan efek kedalaman ruang 3D saat kartu digerakkan.</li>
+                    <li><strong>Kategori Filter Tematik Cepat:</strong> Tombol filter sekali sentuh untuk berbagai tema visual populer (<em>All, Cyberpunk, Nature, Architecture, Minimal</em>).</li>
+                    <li><strong>Live Search Responsive:</strong> Pencarian real-time jutaan foto berkualitas tinggi berdasarkan kata kunci atau tag fotografer.</li>
+                    <li><strong>Pemberian Penghargaan Sumber:</strong> Integrasi metadata fotografer dan label resmi Pixabay API.</li>
+                  </ul>
+                </div>
+
+                <!-- Panel 2: Grid -->
+                <div class="detail-screen-panel" id="parallax-panel-grid">
+                  <h4 class="panel-screen-title">Tampilan Galeri Masonry Grid (2-Kolom)</h4>
+                  <p class="panel-screen-desc">
+                    Tata letak kisi 2-kolom responsif yang menampilkan rasio foto bervariasi secara proporsional dengan efek parallax scroll halus pada setiap kartu gambar.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Dual-Column Responsive Layout:</strong> Pengaturan grid dinamis yang menyesuaikan aspek rasio gambar potret maupun lanskap tanpa cropping paksa.</li>
+                    <li><strong>Parallax Offset per Kartu:</strong> Setiap kartu dalam grid menghitung posisi viewport dan menggeser layer gambar secara dinamis saat discroll.</li>
+                    <li><strong>Kartu Info Cerdas:</strong> Menampilkan judul karya, nama fotografer kontributor, serta tombol favorit (heart like) instan.</li>
+                    <li><strong>Mode Tampilan Switcher:</strong> Kemudahan berganti antara tampilan Grid 2-kolom dan tampilan List Feed Parallax besar.</li>
+                  </ul>
+                </div>
+
+                <!-- Panel 3: Detail -->
+                <div class="detail-screen-panel" id="parallax-panel-detail">
+                  <h4 class="panel-screen-title">Pratinjau Wallpaper Ultra-HD &amp; Metadata Lengkap</h4>
+                  <p class="panel-screen-desc">
+                    Pengalaman visual imersif layar penuh dengan kualitas resolusi tertinggi (hingga 4500 × 3000 px) dilengkapi panel lembar bawah (bottom sheet) informatif.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Tampilan Layar Penuh (Edge-to-Edge):</strong> Menampilkan keindahan foto alam, lanskap pegunungan, dan karya seni tanpa distraksi antarmuka.</li>
+                    <li><strong>Lencana Resolusi Asli:</strong> Menampilkan dimensi piksel resmi foto berkualitas tinggi (contoh: <em>4500 × 3000 px</em>).</li>
+                    <li><strong>Deskripsi &amp; Kurasi Tag:</strong> Rincian narasi foto, nama fotografer internasional, serta daftar tag pencarian terkait.</li>
+                    <li><strong>Aksi Cepat:</strong> Tombol favorit satu ketukan dan tombol kembali yang responsif.</li>
+                  </ul>
+                </div>
+
+                <!-- Panel 4: Feed -->
+                <div class="detail-screen-panel" id="parallax-panel-feed">
+                  <h4 class="panel-screen-title">Tampilan Feed Parallax Vertikal &amp; Filter Reset</h4>
+                  <p class="panel-screen-desc">
+                    Mode feed berukuran besar yang memaksimalkan efek gerak multi-layer parallax scrolling pada gambar resolusi tinggi.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Multi-Layer Parallax Flow:</strong> Latar belakang gambar dan label kartu bergerak dengan kecepatan diferensial saat discroll ke atas dan bawah.</li>
+                    <li><strong>Lencana Interaktif "PARALLAX":</strong> Indikator visual kartu interaktif dengan status jumlah favorit komunitas.</li>
+                    <li><strong>Reset Filter Cepat:</strong> Tombol pintasan untuk mengembalikan tampilan ke seluruh katalog dengan cepat.</li>
+                    <li><strong>Lazy Loading &amp; Image Caching:</strong> Pemuatan aset hemat memori dengan CachedNetworkImage untuk performa scrolling tetap 60 FPS tanpa patah-patah.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. HIGH-RESOLUTION SCREENSHOTS GALLERY SECTION -->
+      <section class="detail-gallery-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">GALERI VISUAL RESOLUSI TINGGI</span>
+          <h2 class="detail-section-title">EKSPLORASI ANTARMUKA 3D PARALLAX &amp; ULTRA-HD</h2>
+        </div>
+
+        <div class="detail-gallery-track">
+          <!-- Card 1 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-parallax-home.jpg" alt="Beranda & Featured Parallax 3D" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Beranda &amp; Hero Parallax 3D</h4>
+              <p>Carousel swipe kedalaman 3D interaktif, chip filter tematik, dan search bar.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-parallax-grid.jpg" alt="Galeri Masonry Grid 2-Kolom" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Galeri Masonry Grid Responsif</h4>
+              <p>Tata letak kisi 2-kolom dinamis dengan efek parallax offset halus per kartu.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-parallax-detail.jpg" alt="Pratinjau Wallpaper Ultra-HD 4500px" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Detail Wallpaper Ultra-HD</h4>
+              <p>Resolusi maksimal 4500 × 3000 px, narasi karya, fotografer credit, dan kurasi tag.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-parallax-feed.jpg" alt="Mode Feed Parallax Vertikal" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Feed Parallax Multi-Layer</h4>
+              <p>Mode scroll vertikal penuh dengan kecepatan layer diferensial dan 60 FPS.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TECHNICAL ARCHITECTURE & VIDEO DEMO -->
+      <section class="detail-content-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">ENGINEERING &amp; MOTION PHYSICS</span>
+          <h2 class="detail-section-title">ARSITEKTUR TEKNIS &amp; MOTION ENGINE</h2>
+        </div>
+
+        <div class="modal-arch-grid">
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">💫</span>
+              <h4>CUSTOM PARALLAX SCROLL CONTROLLER</h4>
+            </div>
+            <p>
+              Implementasi kalkulasi Matrix4 transform dan Flow Delegate kustom untuk menghitung rasio posisi kartu terhadap viewport secara real-time demi mencapai efek kedalaman 3D yang stabil.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">⚡</span>
+              <h4>INTEGRASI PIXABAY REST API</h4>
+            </div>
+            <p>
+              Sinkronisasi katalog jutaan foto berkualitas tinggi secara asinkron dengan paginasi cerdas, debounce input pencarian, dan penanganan status koneksi yang tangguh.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🖼️</span>
+              <h4>EFFICIENT MEMORY &amp; IMAGE CACHING</h4>
+            </div>
+            <p>
+              Manajemen memori GPU dan disk cache menggunakan cache provider teroptimasi untuk mencegah memory leak saat merender puluhan foto resolusi tinggi secara bersamaan.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🎨</span>
+              <h4>CYBERPUNK NEON DARK UI</h4>
+            </div>
+            <p>
+              Estetika antarmuka modern bernuansa neon violet &amp; midnight navy dengan layout switchable (Masonry Grid vs Parallax Feed) dan transisi micro-animation halus.
+            </p>
+          </div>
+
+          <!-- Video Demo Card -->
+          <div class="modal-arch-card"
+            style="grid-column: span 2; background: rgba(139, 92, 246, 0.08); border-color: rgba(168, 85, 247, 0.35);">
+            <div class="arch-card-header">
+              <span class="arch-icon">🎬</span>
+              <h4>DEMO VIDEO GERAK PARALLAX MULTI-LAYER</h4>
+            </div>
+            <p style="margin-bottom: 1.25rem;">
+              Saksikan simulasi fisika scrolling 3D parallax dan transisi visual multi-layer secara langsung di video demo aplikasi:
+            </p>
+            <div
+              style="border-radius: 16px; overflow: hidden; max-width: 360px; margin: 0 auto; box-shadow: 0 16px 36px rgba(0,0,0,0.35); border: 1px solid var(--border-hairline);">
+              <video src="assets/vidio/preview_parallax.mp4" controls playsinline preload="metadata"
+                style="width: 100%; display: block; border-radius: 16px;"></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TECH SPECS -->
+      <section class="detail-content-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">SPESIFIKASI DEPENDENSI</span>
+          <h2 class="detail-section-title">TEKNOLOGI &amp; DEPENDENSI UTAMA</h2>
+        </div>
+
+        <div class="modal-specs-badges">
+          <div class="spec-pill"><strong>Framework:</strong> Flutter 3.x (Dart 3.x)</div>
+          <div class="spec-pill"><strong>Motion Physics:</strong> Flow Delegate &amp; Matrix4 Parallax</div>
+          <div class="spec-pill"><strong>Image API:</strong> Pixabay REST API</div>
+          <div class="spec-pill"><strong>Image Caching:</strong> cached_network_image</div>
+          <div class="spec-pill"><strong>State Management:</strong> Provider / BLoC</div>
+          <div class="spec-pill"><strong>UI Style:</strong> Dark Cyberpunk Visual Depth</div>
+          <div class="spec-pill"><strong>Deploy:</strong> GitHub Pages Hosted</div>
+        </div>
+      </section>
+
+      <!-- 4. CONSULTATION & BOTTOM CTA -->
+      <section class="detail-cta-card">
+        <div class="detail-cta-text">
+          <h3>Tertarik Mengimplementasikan Animasi Parallax &amp; Motion Serupa?</h3>
+          <p>
+            Tingkatkan kesan visual produk digital Anda dengan micro-animations, fisika 3D yang halus, dan arsitektur rendering gambar berkinerja tinggi.
+          </p>
+        </div>
+        <div class="detail-cta-actions">
+          <a href="https://irfanpriyadi21.github.io/flutter-search-image-parallax/" target="_blank"
+            rel="noopener noreferrer" class="pill-btn btn-primary-action">
+            <span>BUKA LIVE DEMO ↗</span>
+          </a>
+          <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Image%20Parallax%20Flutter"
+            target="_blank" rel="noopener noreferrer" class="pill-btn btn-whatsapp-action">
+            <span>KONSULTASI WHATSAPP ↗</span>
+          </a>
+          <a href="index.html#portfolio" class="pill-btn pill-btn-outline" style="padding: 0.75rem 1.4rem;">
+            <span>← PORTOFOLIO</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-editorial container">
+    <div>
+      &copy; 2026 Irfan Priyadi Nurfauzi. All rights reserved.
+    </div>
+    <div>
+      <a href="index.html#portfolio" style="font-weight: 600; color: var(--text-primary);">KEMBALI KE PORTOFOLIO ↑</a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Tersalin ke clipboard</div>
+
+  <script src="project-detail.js?v=20261015-04"></script>
+</body>
+
+</html>

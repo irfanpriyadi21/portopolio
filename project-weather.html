@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Pantauan Cuaca, Kualitas Udara, Gunung Berapi & Gempabumi - Platform pemantauan cuaca hiperlokal, AQI polusi PM2.5, status 69+ gunung api PVMBG, dan gempa bumi BMKG real-time oleh Irfan Priyadi Nurfauzi.">
+  <meta name="author" content="Irfan Priyadi Nurfauzi">
+  <title>Pantauan Cuaca, Kualitas Udara &amp; Bencana BMKG | Detail Proyek Irfan Priyadi</title>
+
+  <!-- Google Fonts: Oswald, Syne, Instrument Serif, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=20261015-06">
+</head>
+
+<body>
+
+  <!-- TOP HEADER / NAV -->
+  <header class="header-nav">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-tag">
+        <span class="brand-dot"></span>
+        <span>IRFAN PRIYADI</span>
+      </a>
+
+      <div class="nav-right-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Ganti Tema">
+          <span id="theme-icon">◐</span>
+          <span id="theme-label">STONE</span>
+        </button>
+
+        <a href="index.html#portfolio" class="pill-btn pill-btn-outline" style="padding: 0.45rem 1rem; font-size: 0.78rem;">
+          <span>← PORTOFOLIO</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="detail-page-wrapper weather-page-theme">
+    <div class="container">
+
+      <!-- Breadcrumb & Back Link -->
+      <nav class="detail-top-nav-bar" aria-label="Breadcrumb">
+        <a href="index.html#portfolio" class="detail-back-link">
+          <span>←</span>
+          <span>Kembali ke Portofolio</span>
+        </a>
+        <div class="detail-breadcrumb">
+          <a href="index.html">Beranda</a>
+          <span class="sep">/</span>
+          <a href="index.html#portfolio">Portofolio</a>
+          <span class="sep">/</span>
+          <span style="color: var(--text-primary); font-weight: 700;">Cuaca &amp; Kebencanaan BMKG</span>
+        </div>
+      </nav>
+
+      <!-- HERO BOX (RICH GLASSMORPHISM CARD) -->
+      <section class="detail-hero-box weather-accent">
+        <!-- Hero Header Row: Icon + Title & Badges in Unified Modern App Layout -->
+        <div class="detail-hero-header-row">
+          <div class="detail-app-icon-frame weather-icon-frame" style="width: 82px; height: 82px; min-width: 82px; max-width: 82px; border-radius: 20px; overflow: hidden; flex-shrink: 0;">
+            <span style="font-size: 2.2rem; line-height: 1;">☀️</span>
+          </div>
+          <div class="detail-hero-header-text">
+            <div class="detail-badge-group">
+              <span class="detail-badge-pill badge-weather-cyan">
+                <span class="pulse-indicator"></span> EARLY WARNING &bull; LIVE BMKG &amp; PVMBG
+              </span>
+              <span class="detail-badge-pill badge-status-green">
+                ✓ LIVE PRODUCTION HOSTED
+              </span>
+              <span class="detail-badge-pill badge-enterprise">
+                GIS GEOSPATIAL MAPS
+              </span>
+            </div>
+            <h1 class="detail-hero-title">
+              PANTAUAN CUACA, KUALITAS UDARA,
+              <span style="color: #0284c7; font-weight: 700;">GUNUNG BERAPI &amp; GEMPABUMI</span>
+            </h1>
+            <div class="detail-identity-sub">SINKRONISASI DATA RESMI BMKG, AQICN &amp; PVMBG MAGMA INDONESIA</div>
+          </div>
+        </div>
+
+        <p class="detail-hero-subtitle">
+          Platform monitoring cuaca presisi &amp; peringatan dini bencana nasional yang mengintegrasikan data terbuka resmi BMKG (Badan Meteorologi, Klimatologi, dan Geofisika), stasiun kualitas udara AQICN (Polusi PM2.5/PM10), peta aktivitas 69+ pos pengamatan gunung api PVMBG Magma Indonesia, serta deteksi gempa bumi berpotensi tsunami secara real-time.
+        </p>
+
+        <!-- Metric Highlights Strip -->
+        <div class="detail-metrics-row">
+          <div class="detail-metric-card">
+            <div class="metric-number">Real-time</div>
+            <div class="metric-label">Sinkronisasi BMKG Open Data</div>
+          </div>
+          <div class="detail-metric-card">
+            <div class="metric-number">69+</div>
+            <div class="metric-label">Gunung Api Aktif PVMBG Magma</div>
+          </div>
+          <div class="detail-metric-card">
+            <div class="metric-number">PM 2.5</div>
+            <div class="metric-label">Indeks Polusi Udara AQICN US</div>
+          </div>
+          <div class="detail-metric-card">
+            <div class="metric-number">M ≥ 5.0</div>
+            <div class="metric-label">Deteksi Gempa Cepat &amp; Tsunami</div>
+          </div>
+        </div>
+
+        <!-- 4-Card Metadata Matrix -->
+        <div class="detail-meta-grid">
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">🛰️</span>
+              <span class="label">Kategori Platform</span>
+            </div>
+            <span class="value">Disaster Early Warning &amp; Weather Intelligence Platform</span>
+          </div>
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">🌐</span>
+              <span class="label">Integrasi Sumber Data</span>
+            </div>
+            <span class="value">BMKG Open Data API, AQICN Global Stations, PVMBG Magma</span>
+          </div>
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">🗺️</span>
+              <span class="label">Map &amp; Theming</span>
+            </div>
+            <span class="value">GIS Interactive Satellite Tiles &bull; Cyberpunk Dark Slate</span>
+          </div>
+          <div class="detail-meta-cell">
+            <div class="meta-header">
+              <span class="meta-icon">🚀</span>
+              <span class="label">Live Demo Hosted</span>
+            </div>
+            <span class="value"><code>irfanpriyadi21.github.io/weather-app</code></span>
+          </div>
+        </div>
+
+        <!-- Action Buttons Group -->
+        <div class="detail-hero-actions">
+          <a href="https://irfanpriyadi21.github.io/weather-app/" target="_blank" rel="noopener noreferrer"
+            class="pill-btn btn-primary-action">
+            <span>BUKA LIVE DEMO WEB ↗</span>
+          </a>
+          <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Weather%20%26%20Disaster%20Monitoring%20App"
+            target="_blank" rel="noopener noreferrer" class="pill-btn btn-whatsapp-action">
+            <span>KONSULTASI VIA WHATSAPP ↗</span>
+          </a>
+          <a href="index.html#portfolio" class="pill-btn pill-btn-outline" style="padding: 0.75rem 1.4rem;">
+            <span>SEMUA PROYEK</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 1. INTERACTIVE SCREEN SHOWCASE SECTION -->
+      <section class="detail-content-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">SHOWCASE ANTARMUKA &amp; FITUR</span>
+          <h2 class="detail-section-title">EKSPLORASI TAMPILAN &amp; FITUR UTAMA APLIKASI</h2>
+        </div>
+
+        <div class="detail-showcase-container">
+          <div class="modal-showcase-grid">
+
+            <!-- Left: Interactive Smartphone Mockup -->
+            <div class="modal-phone-preview-col">
+              <div class="modal-phone-chassis" style="border-color: #172433;">
+                <div class="phone-camera-island"></div>
+                <div class="phone-screen-wrapper">
+                  <img id="phone-screen-img" src="assets/images/project-weather-dashboard.jpg"
+                    alt="Preview Layar Cuaca & BMKG" class="modal-screen-active-img">
+                </div>
+              </div>
+              <div class="phone-preview-caption" id="phone-screen-caption">
+                <strong>Layar Perkiraan Cuaca &amp; BMKG</strong> &mdash; Suhu real-time 30°C, peringatan dini BMKG, kelembapan, angin, UV, dan radar kebencanaan.
+              </div>
+            </div>
+
+            <!-- Right: Rich Feature Tabs & Content Panel -->
+            <div class="modal-screen-tabs-col">
+              <div class="modal-tabs-header">
+                <span class="modal-section-label">PILIH MODUL FITUR UNTUK DILIHAT:</span>
+
+                <!-- Feature Selector Cards -->
+                <div class="detail-tab-cards-list" role="tablist">
+                  <!-- Tab 1: Weather -->
+                  <div class="detail-feature-tab-card detail-tab-btn active"
+                    data-target-panel="weather-panel-dashboard"
+                    data-img="assets/images/project-weather-dashboard.jpg"
+                    data-alt="Preview Layar Cuaca & BMKG"
+                    data-caption="<strong>Layar Perkiraan Cuaca &amp; BMKG</strong> &mdash; Suhu real-time 30°C, peringatan dini BMKG, kelembapan, angin, UV, dan radar kebencanaan."
+                    role="tab" aria-selected="true">
+                    <div class="detail-tab-icon-box">☀️</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Cuaca &amp; Peringatan BMKG</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Metrik cuaca hiperlokal, suhu real-time &amp; banner peringatan dini ekstrem</div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 2: Air Quality -->
+                  <div class="detail-feature-tab-card detail-tab-btn"
+                    data-target-panel="weather-panel-airquality"
+                    data-img="assets/images/project-weather-airquality.jpg"
+                    data-alt="Preview Indeks Kualitas Udara AQI"
+                    data-caption="<strong>Kualitas Udara &amp; Polusi PM2.5</strong> &mdash; Skor AQI 96 Sedang, rekomendasi masker, ventilasi ruangan, dan peringkat polusi kota."
+                    role="tab" aria-selected="false">
+                    <div class="detail-tab-icon-box">💨</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Kualitas Udara (AQI)</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Indeks partikel debu PM2.5 / PM10, rekomendasi masker &amp; ventilasi</div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 3: Volcano -->
+                  <div class="detail-feature-tab-card detail-tab-btn"
+                    data-target-panel="weather-panel-volcano"
+                    data-img="assets/images/project-weather-volcano.jpg"
+                    data-alt="Preview Peta Satelit Gunung Berapi PVMBG"
+                    data-caption="<strong>Pantauan 69+ Gunung Berapi PVMBG</strong> &mdash; 4 Level status resmi, peta satelit GIS, notifikasi VONA, koordinat, dan radius bahaya kawah."
+                    role="tab" aria-selected="false">
+                    <div class="detail-tab-icon-box">🌋</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Peta Gunung Berapi (PVMBG)</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Peta satelit 69+ gunung api, 4 level status resmi &amp; notifikasi VONA abu</div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 4: Earthquake -->
+                  <div class="detail-feature-tab-card detail-tab-btn"
+                    data-target-panel="weather-panel-earthquake"
+                    data-img="assets/images/project-weather-dashboard.jpg"
+                    data-alt="Preview Pantauan Gempa Bumi & Bencana BMKG"
+                    data-caption="<strong>Deteksi Gempa Bumi &amp; Bencana</strong> &mdash; Monitoring gempa M ≥ 5.0, potensi tsunami, titik panas karhutla, dan peringatan darurat."
+                    role="tab" aria-selected="false">
+                    <div class="detail-tab-icon-box">🌍</div>
+                    <div class="detail-tab-text-box">
+                      <div class="detail-tab-title">
+                        <span>Gempa Bumi &amp; Bencana BMKG</span>
+                        <span class="tab-active-pill">AKTIF</span>
+                      </div>
+                      <div class="detail-tab-subtitle">Sensor seismik gempa M ≥ 5.0, peringatan tsunami &amp; titik panas karhutla</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Feature Details Panel -->
+              <div class="detail-tab-content-panels">
+                <!-- Panel 1: Weather -->
+                <div class="detail-screen-panel active" id="weather-panel-dashboard">
+                  <h4 class="panel-screen-title">Perkiraan Cuaca Presisi &amp; Peringatan Dini BMKG</h4>
+                  <p class="panel-screen-desc">
+                    Menyajikan data cuaca akurat berbasis geolokasi pengguna dengan integrasi API resmi BMKG untuk memantau kondisi atmosfer secara langsung dan mendeteksi potensi cuaca ekstrem.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Metrik Cuaca Lengkap:</strong> Suhu aktual (30°C), "Terasa seperti" (35°C), Kelembapan udara (66%), Kecepatan angin (3 km/h), dan Indeks Radiasi UV harian.</li>
+                    <li><strong>Banner Peringatan Dini BMKG Aktif:</strong> Deteksi real-time wilayah berpotensi cuaca ekstrem (contoh: <em>Peringatan 5 Wilayah &mdash; Hujan Lebat disertai Petir di Aceh</em>).</li>
+                    <li><strong>Radar Pintasan Kebencanaan Nasional:</strong>
+                      <div class="mini-tag-grid" style="margin-top: 0.5rem;">
+                        <span class="mini-menu-chip" style="color: #f87171;">🔥 Titik Panas (Karhutla)</span>
+                        <span class="mini-menu-chip" style="color: #fb923c;">🌍 Gempa Bumi (M ≥ 5.0)</span>
+                        <span class="mini-menu-chip" style="color: #facc15;">⚠️ Peringatan Cuaca Ekstrem</span>
+                        <span class="mini-menu-chip" style="color: #f472b6;">🌋 Gunung Api (PVMBG Magma)</span>
+                      </div>
+                    </li>
+                    <li><strong>Berita &amp; Buletin Meteorologi:</strong> Feed informasi dan edukasi kebencanaan resmi BMKG langsung ke genggaman pengguna.</li>
+                  </ul>
+                </div>
+
+                <!-- Panel 2: Air Quality -->
+                <div class="detail-screen-panel" id="weather-panel-airquality">
+                  <h4 class="panel-screen-title">Indeks Kualitas Udara (AQI - Air Quality Index)</h4>
+                  <p class="panel-screen-desc">
+                    Pemantauan tingkat polusi udara berbasis stasiun pengukur AQICN dan BMKG dengan analisis konsentrasi partikel mikro berbahaya (PM2.5) serta panduan proteksi kesehatan.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Indeks Polusi AQI US &amp; Kategori Warna:</strong> Skor AQI real-time (contoh: <em>96 AQI &mdash; Kategori Sedang</em>) dengan indikator visual berkode warna standar internasional.</li>
+                    <li><strong>Multi-Kota &amp; Ranking Kualitas Udara:</strong> Fitur perbandingan polusi udara antar wilayah (Jakarta, Bogor, Depok, dan kota-kota besar lainnya).</li>
+                    <li><strong>Parameter Fisika Udara:</strong> Menampilkan suhu lingkungan, kelembapan relatif, kecepatan angin, serta tekanan atmosfer (1011 hPa).</li>
+                    <li><strong>Panduan &amp; Rekomendasi Kesehatan Cerdas:</strong>
+                      <div class="mini-tag-grid" style="margin-top: 0.5rem;">
+                        <span class="mini-menu-chip">😷 Rekomendasi Masker (Wajib / Opsional)</span>
+                        <span class="mini-menu-chip">🪟 Panduan Ventilasi Ruangan</span>
+                        <span class="mini-menu-chip">🏃 Saran Aktivitas Luar Ruangan</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Panel 3: Volcano -->
+                <div class="detail-screen-panel" id="weather-panel-volcano">
+                  <h4 class="panel-screen-title">Peta Satelit Aktivitas Gunung Berapi (PVMBG)</h4>
+                  <p class="panel-screen-desc">
+                    Pemetaan visual interaktif berbasis citra satelit resolusi tinggi untuk memantau 69+ gunung api di seluruh gugusan kepulauan Indonesia sesuai data pos pengamatan PVMBG Badan Geologi.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Klasifikasi 4 Tingkat Status PVMBG:</strong> Level I Normal, Level II Waspada, Level III Siaga, dan Level IV Awas dengan penanda visual glowing marker.</li>
+                    <li><strong>Peta Interaktif GIS &amp; Titik Koordinat:</strong> Filter status gunung aktif (28 gunung api aktif), pencarian nama gunung, dan elevasi ketinggian (mdpl).</li>
+                    <li><strong>Notifikasi VONA (Aviation):</strong> Menampilkan status abu vulkanik untuk keselamatan penerbangan internasional.</li>
+                    <li><strong>Zona Radius Bahaya Kawah:</strong> Radius aman kawah puncak (1.5 - 3 km) serta pantauan aktivitas magma.</li>
+                  </ul>
+                </div>
+
+                <!-- Panel 4: Earthquake -->
+                <div class="detail-screen-panel" id="weather-panel-earthquake">
+                  <h4 class="panel-screen-title">Deteksi Gempa Bumi &amp; Peringatan Bencana Real-Time</h4>
+                  <p class="panel-screen-desc">
+                    Sistem pemantauan gempa bumi terintegrasi sensor seismik BMKG untuk mendeteksi gempa berkekuatan M ≥ 5.0 dan gempa berpotensi tsunami secara seketika.
+                  </p>
+                  <ul class="panel-feature-list">
+                    <li><strong>Notifikasi Cepat Gempa M ≥ 5.0:</strong> Data getaran seismik instan mencakup waktu kejadian, kekuatan magnitudo, kedalaman, dan status potensi tsunami.</li>
+                    <li><strong>Episentrum &amp; Jarak Lokasi:</strong> Kalkulasi jarak pusat gempa ke lokasi tempat tinggal pengguna beserta koordinat lintang &amp; bujur presisi.</li>
+                    <li><strong>Titik Panas (Hotspot Karhutla):</strong> Deteksi titik api kebakaran hutan &amp; lahan se-Indonesia via sensor satelit LAPAN/BRIN &amp; BMKG.</li>
+                    <li><strong>Riwayat &amp; Gempa Dirasakan:</strong> Informasi skala MMI (Modified Mercalli Intensity) untuk estimasi dampak getaran.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. HIGH-RESOLUTION SCREENSHOTS GALLERY SECTION -->
+      <section class="detail-gallery-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">GALERI DOKUMENTASI SISTEM</span>
+          <h2 class="detail-section-title">TAMPILAN INTERAKTIF RESOLUSI TINGGI (HD)</h2>
+        </div>
+
+        <div class="detail-gallery-track">
+          <!-- Card 1 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-weather-dashboard.jpg" alt="Dashboard Cuaca Hiperlokal & Citra Satelit" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Dashboard Cuaca Hiperlokal</h4>
+              <p>Suhu real-time, kelembaban, prakiraan per jam, dan animasi radar cuaca BMKG.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-weather-airquality.jpg" alt="Indeks Kualitas Udara AQI US" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Indeks Kualitas Udara (AQI)</h4>
+              <p>Konsentrasi polutan PM2.5 & PM10, rekomendasi masker, dan status udara sehat.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-weather-volcano.jpg" alt="GIS Pemantauan 69+ Gunung Api PVMBG" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>GIS Peta Gunung Api Aktif</h4>
+              <p>Status vulkanik (Level I-IV), zona bahaya radius erupsi, dan seismograf PVMBG.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="detail-gallery-card">
+            <div class="gallery-card-thumb">
+              <img src="assets/images/project-weather.jpg" alt="Early Warning & Deteksi Gempa Bumi" loading="lazy">
+            </div>
+            <div class="gallery-card-body">
+              <h4>Early Warning Gempa M ≥ 5.0</h4>
+              <p>Notifikasi gempa bumi real-time, deteksi potensi tsunami, dan jarak episentrum.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TECHNICAL ARCHITECTURE SECTION -->
+      <section class="detail-content-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">ENGINEERING &amp; KEANDALAN</span>
+          <h2 class="detail-section-title">ARSITEKTUR TEKNIS &amp; INTEGRASI MULTI-ENDPOINT</h2>
+        </div>
+
+        <div class="modal-arch-grid">
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🛰️</span>
+              <h4>INTEGRASI BMKG &amp; PVMBG API</h4>
+            </div>
+            <p>
+              Sinkronisasi data real-time dengan Open Data BMKG (prakiraan cuaca, gempa M ≥ 5.0, radar cuaca) serta feed resmi PVMBG Magma Indonesia untuk status erupsi vulkanik terkini.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">💨</span>
+              <h4>AQICN SENSOR INTELLIGENCE</h4>
+            </div>
+            <p>
+              Pengolahan data stasiun kualitas udara dunia (AQICN) untuk menghitung indeks partikel PM2.5 &amp; PM10, menghasilkan rekomendasi kesehatan preventif secara otomatis.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">🗺️</span>
+              <h4>GIS SATELLITE MAPPING LAYER</h4>
+            </div>
+            <p>
+              Rendering peta geospasial interaktif menggunakan tiles satelit berkecepatan tinggi dengan clustering marker 69+ titik gunung api dan kalkulasi radius bahaya kawah presisi.
+            </p>
+          </div>
+
+          <div class="modal-arch-card">
+            <div class="arch-card-header">
+              <span class="arch-icon">⚡</span>
+              <h4>DARK MODE &amp; OFFLINE-READY CACHE</h4>
+            </div>
+            <p>
+              Antarmuka bernuansa dark slate modern dengan konsumsi baterai rendah (AMOLED friendly), didukung caching lokal agar informasi darurat terakhir tetap dapat dibaca tanpa internet.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TECH SPECS & DEPENDENCIES -->
+      <section class="detail-content-section">
+        <div class="detail-section-header">
+          <span class="detail-section-tag">SPESIFIKASI DEPENDENSI</span>
+          <h2 class="detail-section-title">TEKNOLOGI &amp; SUMBER DATA</h2>
+        </div>
+
+        <div class="modal-specs-badges">
+          <div class="spec-pill"><strong>Framework:</strong> Flutter / Modern Web</div>
+          <div class="spec-pill"><strong>Weather Data:</strong> BMKG Open Data &amp; OpenWeather</div>
+          <div class="spec-pill"><strong>Air Quality:</strong> AQICN API (PM2.5 / PM10)</div>
+          <div class="spec-pill"><strong>Volcanology:</strong> PVMBG Magma Indonesia &amp; VONA</div>
+          <div class="spec-pill"><strong>Map Engine:</strong> Interactive GIS Satellite Layer</div>
+          <div class="spec-pill"><strong>Theming:</strong> Dark Slate Cyberpunk UI</div>
+          <div class="spec-pill"><strong>Deploy:</strong> GitHub Pages Hosted</div>
+        </div>
+      </section>
+
+      <!-- 4. CONSULTATION & BOTTOM CTA -->
+      <section class="detail-cta-card">
+        <div class="detail-cta-text">
+          <h3>Tertarik dengan Integrasi Data Real-Time &amp; GIS?</h3>
+          <p>
+            Membangun sistem pemantauan data publik, integrasi API geospasial, dan arsitektur dashboard berkinerja tinggi adalah spesialisasi saya. Mari diskusikan ide aplikasi Anda.
+          </p>
+        </div>
+        <div class="detail-cta-actions">
+          <a href="https://irfanpriyadi21.github.io/weather-app/" target="_blank" rel="noopener noreferrer"
+            class="pill-btn btn-primary-action">
+            <span>BUKA LIVE DEMO ↗</span>
+          </a>
+          <a href="https://wa.me/6285694118211?text=Halo%20Irfan,%20saya%20tertarik%20dengan%20proyek%20Weather%20%26%20Disaster%20Monitoring%20App"
+            target="_blank" rel="noopener noreferrer" class="pill-btn btn-whatsapp-action">
+            <span>KONSULTASI WHATSAPP ↗</span>
+          </a>
+          <a href="index.html#portfolio" class="pill-btn pill-btn-outline" style="padding: 0.75rem 1.4rem;">
+            <span>← PORTOFOLIO</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-editorial container">
+    <div>
+      &copy; 2026 Irfan Priyadi Nurfauzi. All rights reserved.
+    </div>
+    <div>
+      <a href="index.html#portfolio" style="font-weight: 600; color: var(--text-primary);">KEMBALI KE PORTOFOLIO ↑</a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Tersalin ke clipboard</div>
+
+  <script src="project-detail.js?v=20261015-04"></script>
+</body>
+
+</html>
